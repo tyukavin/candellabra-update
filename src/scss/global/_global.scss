@@ -1,55 +1,23 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-}
-
-.flex {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-
-.--just-space {
-	justify-content: space-between;
-}
-
-.--just-center {
-	justify-content: center;
-}
-
-.--just-end {
-	justify-content: flex-end;
-}
-
-.--align-str {
-	align-items: stretch;
-}
-
-.--align-center {
-	align-items: center;
-}
-
-.--align-end {
-	align-items: flex-end;
-}
-
-.--dir-col {
-	flex-direction: column;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 html,
 body {
-	min-height: 100%;
-	position: relative;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
-	font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 ul,
@@ -62,5 +30,5 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+    margin: 0;
 }

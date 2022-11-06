@@ -8,7 +8,82 @@
 
 <body>
 
-    <main class="main"></main>
+    <main class="main">
+
+        <div class="product container">
+            <div class="product__badge">Ручная работа</div>
+            <div class="product__head">
+                <h1>Статуэтка декоративная “Egg Small”</h1>
+                <div class="article">
+                    <span>Артикул:</span> 1000987
+                </div>
+            </div>
+            <div class="product__content">
+                <div class="product-slider">1</div>
+
+                <div class="product-info">
+                    <div class="product-info__price">
+                        <div>
+                            <div>
+                                <div class="price">
+                                    56 700 <span class="price--currency">₽</span>
+                                </div>
+                                <div class="price--old">60 700 ₽</div>
+                            </div>
+                            <div class="profit">Выгода 4000 ₽</div>
+                        </div>
+                        <div class="sale">-24%</div>
+                    </div>
+                    <div class="product-related">
+                        <div class="product-related__head">Другие варианты товара</div>
+                        <div class="product-related__slider js-related-slider">
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-1.jpg" alt="">
+                            </div>
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-2.jpg" alt="">
+                            </div>
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-3.jpg" alt="">
+                            </div>
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-4.jpg" alt="">
+                            </div>
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-1.jpg" alt="">
+                            </div>
+                            <div class="product-related__slider-item">
+                                <img src="./img/related/item-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-size">
+                        <div class="product-size__head">Размер</div>
+                        <select class="btn-select" name="product-size" id="">
+                            <option value="">S (4 см) - 56 700р</option>
+                            <option value="">M (8 см) - 60 200р</option>
+                            <option value="">L (12 см) - 64 700р</option>
+                        </select>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-stroke">Купить в 1 клик</button>
+                        <button class="btn btn--primary">В корзину</button>
+                        <button class="btn btn--secondary">Забронировать в магазине</button>
+                    </div>
+
+                    <div class="product-buypart">
+                        <img src="/img/dolyami-logo-black.png" alt="Долями">
+                        <div class="product-buypart__text">
+                            4 платежа по <a href="#">12000 руб</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     @@include('components/page-blocks/_scripts.html')
 </body>

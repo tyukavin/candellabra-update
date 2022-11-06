@@ -1,4 +1,7 @@
-const plugins = [];
+const plugins = [
+    "src/scss/slick.css",
+    "src/scss/slick-theme.css"
+];
 
 const {
 	src,

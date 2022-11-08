@@ -1,0 +1,44 @@
+.viewed {
+    margin-top: 76px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 43.5px;
+    }
+}
+
+.viewed-item {
+    max-width: 107px;
+    text-decoration: none;
+    transition: transform .2s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    &__img {
+        margin-bottom: 5px;
+    }
+
+    &__name {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        padding: 0 5px;
+        margin-bottom: 8px;
+    }
+
+    &__price {
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+        padding: 0 5px;
+    }
+}

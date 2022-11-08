@@ -22,9 +22,9 @@
 
 <body>
 
-    <main class="main">
+    <main class="main container">
 
-        <div class="product container">
+        <div class="product">
             <div class="product__badge">Ручная работа</div>
             <div class="product__head">
                 <h1>Статуэтка декоративная “Egg Small”</h1>
@@ -33,70 +33,595 @@
                 </div>
             </div>
             <div class="product__content">
-                <div class="product-slider">1</div>
+                <div class="product__content-left">
+                    <div class="product-slider">
+                        <div class="product-slider__nav">
+                            <button class="product-slider__step product-slider__step--next">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#sprite--Step"/>
+                                </svg>
+                            </button>
+                            <div class="js-slider-nav">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                            </div>
+                            <button class="product-slider__step product-slider__step--prev">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#sprite--Step"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-slider__main js-slider-main">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                        </div>
+                    </div>
 
-                <div class="product-info">
-                    <div class="product-info__price">
-                        <div>
-                            <div>
-                                <div class="price">
-                                    56 700 <span class="price--currency">₽</span>
+                    <div class="product-video">
+                        <div class="product-video__title">Видео-обзор</div>
+                        <div class="product-video__grid">
+                            <div class="product-video__item">
+                                <img src="img/play-icon.svg" alt="play"
+                                    class="icon">
+                                <img src="img/video/1-video.jpg" alt="Видео 1">
+                            </div>
+                            <div class="product-video__item">
+                                <img src="img/play-icon.svg" alt="play"
+                                    class="icon">
+                                <img src="img/video/2-video.jpg" alt="Видео 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details">
+                        <h4>Характеристики</h4>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Размеры</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Высота</div>
+                                <div class="product-details__section-value">160
+                                    см</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Ширина</div>
+                                <div class="product-details__section-value">120
+                                    см</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Длина</div>
+                                <div class="product-details__section-value">50
+                                    см</div>
+                            </div>
+                        </div>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Материалы
+                                и
+                                цвет</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Сиденья</div>
+                                <div class="product-details__section-value">Ткань</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Ножки</div>
+                                <div class="product-details__section-value">Сталь</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Цвет</div>
+                                <div class="product-details__section-value">Бежевый</div>
+                            </div>
+                        </div>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Общие</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Гарантия</div>
+                                <div class="product-details__section-value">5
+                                    лет</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Стиль</div>
+                                <div class="product-details__section-value">Классика</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Подлокотники</div>
+                                <div class="product-details__section-value">Да</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Мягкое
+                                    сиденье</div>
+                                <div class="product-details__section-value">Да</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Регулировка
+                                    высоты</div>
+                                <div class="product-details__section-value">Нет</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Макс.
+                                    нагрузка</div>
+                                <div class="product-details__section-value">100
+                                    кг</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Коллекция</div>
+                                <div class="product-details__section-value">
+                                    <a href="#">Kelly Lounge</a>
                                 </div>
-                                <div class="price--old">60 700 ₽</div>
                             </div>
-                            <div class="profit">Выгода 4000 ₽</div>
                         </div>
-                        <div class="sale">-24%</div>
                     </div>
-                    <div class="product-related">
-                        <div class="product-related__head">Другие варианты товара</div>
-                        <div class="product-related__slider js-related-slider">
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-1.jpg" alt="">
+                </div>
+
+                <div class="product__content-right">
+                    <div class="product-info">
+                        <div class="product-info__price">
+                            <div>
+                                <div>
+                                    <div class="price">
+                                        56 700 <span class="price--currency">₽</span>
+                                    </div>
+                                    <div class="price--old">60 700 ₽</div>
+                                </div>
+                                <div class="profit">Выгода 4000 ₽</div>
                             </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-2.jpg" alt="">
+                            <div class="sale">-24%</div>
+                        </div>
+                        <div class="product-related">
+                            <div class="product-related__head">Другие варианты
+                                товара</div>
+                            <div class="product-related__slider
+                                js-related-slider">
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-1.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-2.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-3.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-4.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-1.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-2.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-4.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-2.jpg" alt="">
+                        </div>
+
+                        <div class="product-size">
+                            <div class="product-size__head">Размер</div>
+                            <select class="btn-select" name="product-size"
+                                id="">
+                                <option value="">S (4 см) - 56 700р</option>
+                                <option value="">M (8 см) - 60 200р</option>
+                                <option value="">L (12 см) - 64 700р</option>
+                            </select>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn-stroke">Купить в 1 клик</button>
+                            <button class="btn btn--primary">В корзину</button>
+                            <button class="btn btn--secondary">Забронировать в
+                                магазине</button>
+                        </div>
+
+                        <div class="product-buypart">
+                            <img src="/img/dolyami-logo-black.png" alt="Долями">
+                            <div class="product-buypart__text">
+                                4 платежа по <a href="#">12000 руб</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="product-size">
-                        <div class="product-size__head">Размер</div>
-                        <select class="btn-select" name="product-size" id="">
-                            <option value="">S (4 см) - 56 700р</option>
-                            <option value="">M (8 см) - 60 200р</option>
-                            <option value="">L (12 см) - 64 700р</option>
-                        </select>
-                    </div>
-                    
-                    <div class="product-actions">
-                        <button class="btn-stroke">Купить в 1 клик</button>
-                        <button class="btn btn--primary">В корзину</button>
-                        <button class="btn btn--secondary">Забронировать в магазине</button>
+                    <div class="product-about-order">
+                        <div class="product-about-order__section">
+                            <div class="product-about-order__icon">
+                                <svg class="icon">
+                                    <use
+                                        xlink:href="img/sprite.svg#sprite--Package"/>
+                                    </svg>
+                                </div>
+                                <div class="product-about-order__content">
+                                    <div
+                                        class="product-about-order__content-title">
+                                        Наличие
+                                    </div>
+                                    <p>ТЦ “Жемчужная Плаза”: <span
+                                            class="value">25
+                                            шт</span></p>
+                                    <p>На складе интернет-магазина: <span
+                                            class="value">1055 шт</span></p>
+                                    <p>На складе поставщика: <span
+                                            class="value">2500
+                                            шт</span></p>
+                                </div>
+                            </div>
+                            <div class="product-about-order__section">
+                                <div class="product-about-order__icon">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="img/sprite.svg#sprite--Truck"/>
+                                        </svg>
+                                    </div>
+                                    <div class="product-about-order__content">
+                                        <div
+                                            class="product-about-order__content-title">
+                                            Доставим 12 марта
+                                        </div>
+                                        <p>Бесплатно для Москвы<br>и
+                                            Санкт-Петербурга от 70 000 руб.</p>
+                                        <p>
+                                            <a href="#">Подробнее о доставке</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-about-order__section">
+                                    <div class="product-about-order__icon">
+                                        <svg class="icon">
+                                            <use
+                                                xlink:href="img/sprite.svg#sprite--Safe"/>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="product-about-order__content">
+                                            <div
+                                                class="product-about-order__content-title">
+                                                Гарантия и возврат
+                                            </div>
+                                            <p>Гарантия производителя: <span
+                                                    class="value">12 мес.</span></p>
+                                            <p>
+                                                До 14 дней на возврат
+                                                <svg class="icon-tooltip">
+                                                    <use
+                                                        xlink:href="img/sprite.svg#sprite--Question"/>
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                        </div>
                     </div>
 
-                    <div class="product-buypart">
-                        <img src="/img/dolyami-logo-black.png" alt="Долями">
-                        <div class="product-buypart__text">
-                            4 платежа по <a href="#">12000 руб</a>
+                    <div class="product-collection">
+                        <div class="product-collection__head">
+                            <div class="product-collection__title">Из этой коллекции</div>
+                            <a href="#">Перейти к коллекции</a>
+                        </div>
+                        <div class="product-collection__list">
+                            <a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/1-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/2-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/3-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/4-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a>
                         </div>
                     </div>
+
+                    <div class="product-description">
+                        <div class="product-description__title">Описание</div>
+                        <div class="product-description__content">
+                            <p>
+                                Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. Крайне выгодное
+                                и полезное Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. 
+                            </p>
+                        </div>
+                        <button class="show-more">Показать больше</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="map">
+    <div class="map__title">Магазины Candellabra</div>
+    <div class="map__content">
+        <div class="map__nav">
+            <div class="map__nav-countries active">
+                <span>Россия</span>
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                </svg>
+            </div>
+            <ul>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Москва</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Санкт-Петербург</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Казань</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Челябинск</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Омск</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Барнаул</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Ростов-на-Дону</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Нальчик</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Иркутск</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Красноярск</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="map__nav-city">
+                        <span>Сочи</span>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#sprite--Arrow-down"/>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="map__main">
+            <img src="img/map.jpg" alt="map">
+        </div>
+    </div>
+</div>
+
+        <div class="viewed">
+            <h3 class="viewed__title">Недавно просмотренные</h3>
+            <div class="viewed__grid">
+                <a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/1-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/2-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/3-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/4-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/5-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/6-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/1-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a><a href="#" class="viewed-item" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item__img">
+        <img src="/img/viewed/2-item.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item__price">42 290 ₽</div>
+</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3 class="category__title">Популярные категории</h3>
+            <div class="category__grid">
+                <a href="#" class="tile" title="Диваны">
+    <img src="img/category/1-cat.png" alt="Диваны">
+    <span class="tile__name">Диваны</span>
+</a><a href="#" class="tile" title="Детское">
+    <img src="img/category/2-cat.png" alt="Детское">
+    <span class="tile__name">Детское</span>
+</a><a href="#" class="tile" title="Столы">
+    <img src="img/category/3-cat.png" alt="Столы">
+    <span class="tile__name">Столы</span>
+</a><a href="#" class="tile" title="Кресла">
+    <img src="img/category/4-cat.png" alt="Кресла">
+    <span class="tile__name">Кресла</span>
+</a><a href="#" class="tile" title="Пуфики">
+    <img src="img/category/5-cat.png" alt="Пуфики">
+    <span class="tile__name">Пуфики</span>
+</a><a href="#" class="tile" title="Стулья">
+    <img src="img/category/6-cat.png" alt="Стулья">
+    <span class="tile__name">Стулья</span>
+</a><a href="#" class="tile" title="Кровата и&nbsp;матрасы">
+    <img src="img/category/7-cat.png" alt="Кровата и&nbsp;матрасы">
+    <span class="tile__name">Кровата и&nbsp;матрасы</span>
+</a><a href="#" class="tile" title="Освещение">
+    <img src="img/category/8-cat.png" alt="Освещение">
+    <span class="tile__name">Освещение</span>
+</a><a href="#" class="tile" title="Шкафы">
+    <img src="img/category/9-cat.png" alt="Шкафы">
+    <span class="tile__name">Шкафы</span>
+</a><a href="#" class="tile" title="Комоды">
+    <img src="img/category/10-cat.png" alt="Комоды">
+    <span class="tile__name">Комоды</span>
+</a><a href="#" class="tile" title="Картины и&nbsp;постеры">
+    <img src="img/category/11-cat.png" alt="Картины и&nbsp;постеры">
+    <span class="tile__name">Картины и&nbsp;постеры</span>
+</a><a href="#" class="tile" title="Зеркала">
+    <img src="img/category/12-cat.png" alt="Зеркала">
+    <span class="tile__name">Зеркала</span>
+</a>
+            </div>
+        </div>
+
+        <div class="faq">
+    <h3 class="faq__title">Популярные вопросы</h3>
+    <div class="faq__list">
+        <div class="faq__item show">
+            <div class="faq__item-head">
+                <span>Как я могу оплатить заказ?</span>
+                <img src="img/arrow-icon.svg" alt="arrow">
+            </div>
+            <div class="faq__item-content">
+                <div class="faq__item-content-ins">
+                    <p>
+                        «Потолочный светильник Button 10007/18 Copper» на
+                        Candellabra.com можно оплатить картой онлайн, или взять
+                        кредит онлайн от Tinkoff Банка. Если вы хотите оплатить как
+                        юр.лицо, напишите почту <a href="mailto:marketing@candellabra.com">marketing@candellabra.com</a>
+                    </p>
                 </div>
             </div>
         </div>
 
+        <div class="faq__item">
+            <div class="faq__item-head">
+                <span>Есть ли скидки для дизайнеров?</span>
+                <img src="img/arrow-icon.svg" alt="arrow">
+            </div>
+            <div class="faq__item-content">
+                <div class="faq__item-content-ins">
+                    <p>
+                        Да, мы сотрудничаем с дизайнерами и студиями на особых
+                        условиях. По всем вопросам пишите на почту
+                        <a href="mailto:marketing@candellabra.com">marketing@candellabra.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq__item">
+            <div class="faq__item-head">
+                <span>Где можно посмотреть товар?</span>
+                <img src="img/arrow-icon.svg" alt="arrow">
+            </div>
+            <div class="faq__item-content">
+                <div class="faq__item-content-ins">
+                    <p>
+                        Мы работаем согласно законодательства РФ. Вы можете вернуть
+                        товар в течение 14 дней, при условии что вы сохранили товар
+                        в надлежащем виде. А вот товары по индивидуальному заказу
+                        вернуть нельзя.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="subscription">
+    <div class="send-icon">
+        <img src="img/send-icon.svg" alt="Подписка на
+            новости">
+    </div>
+    <div class="subscription__content">
+        <h5 class="title-content">Не пропустите
+            распродажу</h5>
+        <p>
+            Подпишитесь на рассылку CANDELLABRA и
+            получите приоритетный доступ к распродаже и
+            в числе первых узнавайте об акциях и
+            новинках.
+        </p>
+    </div>
+    <div class="subscription__form">
+        <input type="text" class="input input--email" placeholder="Ваш e-mail ...">
+        <button class="btn btn--primary">Подписаться</button>
+    </div>
+</div>
     </main>
 
     <script src="js/libs.min.js"></script>

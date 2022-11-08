@@ -1,0 +1,78 @@
+.map {
+    margin-top: 76px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__nav {
+        overflow-y: auto;
+        margin-right: 35px;
+        max-height: 505px;
+        width: 344px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #d8d8d8;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        &-countries {
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            padding: 11px 10px 11px 20px;
+            align-items: center;
+
+            &.active {
+                background: #F6F8F9;
+                border-radius: 10px;
+
+                .icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &-city {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            padding: 11px 10px 11px 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .icon {
+            cursor: pointer;
+            height: 24px;
+            width: 24px;
+            fill: #969CA3;
+        }
+    }
+}

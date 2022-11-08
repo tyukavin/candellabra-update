@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
-    "lang":"ru",
-    "title":"Карточка товара",
-    "description":"Вёрстка карточки товара для Candellabre",
-    "favicon":"img/favicon/favicon",
+"lang":"ru",
+"title":"Карточка товара",
+"description":"Вёрстка карточки товара для Candellabre",
+"favicon":"img/favicon/favicon",
 })
 
 <body>
 
-    <main class="main">
+    <main class="main container">
 
-        <div class="product container">
+        <div class="product">
             <div class="product__badge">Ручная работа</div>
             <div class="product__head">
                 <h1>Статуэтка декоративная “Egg Small”</h1>
@@ -19,70 +19,315 @@
                 </div>
             </div>
             <div class="product__content">
-                <div class="product-slider">1</div>
+                <div class="product__content-left">
+                    <div class="product-slider">
+                        <div class="product-slider__nav">
+                            <button class="product-slider__step product-slider__step--next">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#sprite--Step"/>
+                                </svg>
+                            </button>
+                            <div class="js-slider-nav">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                                <img src="img/product-item.jpg" alt="">
+                            </div>
+                            <button class="product-slider__step product-slider__step--prev">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#sprite--Step"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product-slider__main js-slider-main">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                            <img src="img/product-item.jpg" alt="">
+                        </div>
+                    </div>
 
-                <div class="product-info">
-                    <div class="product-info__price">
-                        <div>
-                            <div>
-                                <div class="price">
-                                    56 700 <span class="price--currency">₽</span>
+                    <div class="product-video">
+                        <div class="product-video__title">Видео-обзор</div>
+                        <div class="product-video__grid">
+                            <div class="product-video__item">
+                                <img src="img/play-icon.svg" alt="play"
+                                    class="icon">
+                                <img src="img/video/1-video.jpg" alt="Видео 1">
+                            </div>
+                            <div class="product-video__item">
+                                <img src="img/play-icon.svg" alt="play"
+                                    class="icon">
+                                <img src="img/video/2-video.jpg" alt="Видео 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details">
+                        <h4>Характеристики</h4>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Размеры</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Высота</div>
+                                <div class="product-details__section-value">160
+                                    см</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Ширина</div>
+                                <div class="product-details__section-value">120
+                                    см</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Длина</div>
+                                <div class="product-details__section-value">50
+                                    см</div>
+                            </div>
+                        </div>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Материалы
+                                и
+                                цвет</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Сиденья</div>
+                                <div class="product-details__section-value">Ткань</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Ножки</div>
+                                <div class="product-details__section-value">Сталь</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Цвет</div>
+                                <div class="product-details__section-value">Бежевый</div>
+                            </div>
+                        </div>
+                        <div class="product-details__section">
+                            <h5 class="product-details__section-title">Общие</h5>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Гарантия</div>
+                                <div class="product-details__section-value">5
+                                    лет</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Стиль</div>
+                                <div class="product-details__section-value">Классика</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Подлокотники</div>
+                                <div class="product-details__section-value">Да</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Мягкое
+                                    сиденье</div>
+                                <div class="product-details__section-value">Да</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Регулировка
+                                    высоты</div>
+                                <div class="product-details__section-value">Нет</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Макс.
+                                    нагрузка</div>
+                                <div class="product-details__section-value">100
+                                    кг</div>
+                            </div>
+                            <div class="product-details__section-row">
+                                <div class="product-details__section-name">Коллекция</div>
+                                <div class="product-details__section-value">
+                                    <a href="#">Kelly Lounge</a>
                                 </div>
-                                <div class="price--old">60 700 ₽</div>
                             </div>
-                            <div class="profit">Выгода 4000 ₽</div>
-                        </div>
-                        <div class="sale">-24%</div>
-                    </div>
-                    <div class="product-related">
-                        <div class="product-related__head">Другие варианты товара</div>
-                        <div class="product-related__slider js-related-slider">
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-2.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-3.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-4.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-1.jpg" alt="">
-                            </div>
-                            <div class="product-related__slider-item">
-                                <img src="./img/related/item-2.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-size">
-                        <div class="product-size__head">Размер</div>
-                        <select class="btn-select" name="product-size" id="">
-                            <option value="">S (4 см) - 56 700р</option>
-                            <option value="">M (8 см) - 60 200р</option>
-                            <option value="">L (12 см) - 64 700р</option>
-                        </select>
-                    </div>
-                    
-                    <div class="product-actions">
-                        <button class="btn-stroke">Купить в 1 клик</button>
-                        <button class="btn btn--primary">В корзину</button>
-                        <button class="btn btn--secondary">Забронировать в магазине</button>
-                    </div>
-
-                    <div class="product-buypart">
-                        <img src="/img/dolyami-logo-black.png" alt="Долями">
-                        <div class="product-buypart__text">
-                            4 платежа по <a href="#">12000 руб</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="product__content-right">
+                    <div class="product-info">
+                        <div class="product-info__price">
+                            <div>
+                                <div>
+                                    <div class="price">
+                                        56 700 <span class="price--currency">₽</span>
+                                    </div>
+                                    <div class="price--old">60 700 ₽</div>
+                                </div>
+                                <div class="profit">Выгода 4000 ₽</div>
+                            </div>
+                            <div class="sale">-24%</div>
+                        </div>
+                        <div class="product-related">
+                            <div class="product-related__head">Другие варианты
+                                товара</div>
+                            <div class="product-related__slider
+                                js-related-slider">
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-1.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-2.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-3.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-4.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-1.jpg" alt="">
+                                </div>
+                                <div class="product-related__slider-item">
+                                    <img src="./img/related/item-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-size">
+                            <div class="product-size__head">Размер</div>
+                            <select class="btn-select" name="product-size"
+                                id="">
+                                <option value="">S (4 см) - 56 700р</option>
+                                <option value="">M (8 см) - 60 200р</option>
+                                <option value="">L (12 см) - 64 700р</option>
+                            </select>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn-stroke">Купить в 1 клик</button>
+                            <button class="btn btn--primary">В корзину</button>
+                            <button class="btn btn--secondary">Забронировать в
+                                магазине</button>
+                        </div>
+
+                        <div class="product-buypart">
+                            <img src="/img/dolyami-logo-black.png" alt="Долями">
+                            <div class="product-buypart__text">
+                                4 платежа по <a href="#">12000 руб</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-about-order">
+                        <div class="product-about-order__section">
+                            <div class="product-about-order__icon">
+                                <svg class="icon">
+                                    <use
+                                        xlink:href="img/sprite.svg#sprite--Package"/>
+                                    </svg>
+                                </div>
+                                <div class="product-about-order__content">
+                                    <div
+                                        class="product-about-order__content-title">
+                                        Наличие
+                                    </div>
+                                    <p>ТЦ “Жемчужная Плаза”: <span
+                                            class="value">25
+                                            шт</span></p>
+                                    <p>На складе интернет-магазина: <span
+                                            class="value">1055 шт</span></p>
+                                    <p>На складе поставщика: <span
+                                            class="value">2500
+                                            шт</span></p>
+                                </div>
+                            </div>
+                            <div class="product-about-order__section">
+                                <div class="product-about-order__icon">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="img/sprite.svg#sprite--Truck"/>
+                                        </svg>
+                                    </div>
+                                    <div class="product-about-order__content">
+                                        <div
+                                            class="product-about-order__content-title">
+                                            Доставим 12 марта
+                                        </div>
+                                        <p>Бесплатно для Москвы<br>и
+                                            Санкт-Петербурга от 70 000 руб.</p>
+                                        <p>
+                                            <a href="#">Подробнее о доставке</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-about-order__section">
+                                    <div class="product-about-order__icon">
+                                        <svg class="icon">
+                                            <use
+                                                xlink:href="img/sprite.svg#sprite--Safe"/>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="product-about-order__content">
+                                            <div
+                                                class="product-about-order__content-title">
+                                                Гарантия и возврат
+                                            </div>
+                                            <p>Гарантия производителя: <span
+                                                    class="value">12 мес.</span></p>
+                                            <p>
+                                                До 14 дней на возврат
+                                                <svg class="icon-tooltip">
+                                                    <use
+                                                        xlink:href="img/sprite.svg#sprite--Question"/>
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                        </div>
+                    </div>
+
+                    <div class="product-collection">
+                        <div class="product-collection__head">
+                            <div class="product-collection__title">Из этой коллекции</div>
+                            <a href="#">Перейти к коллекции</a>
+                        </div>
+                        <div class="product-collection__list">
+                            @@loop("components/bem-blocks/_viewed-item.html", [
+                                {"img": "1-item"},
+                                {"img": "2-item"},
+                                {"img": "3-item"},
+                                {"img": "4-item"}
+                            ])
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <div class="product-description__title">Описание</div>
+                        <div class="product-description__content">
+                            <p>
+                                Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. Крайне выгодное
+                                и полезное Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. 
+                            </p>
+                        </div>
+                        <button class="show-more">Показать больше</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        @@include('components/page-blocks/map/_map.html')
+
+        <div class="viewed">
+            <h3 class="viewed__title">Недавно просмотренные</h3>
+            <div class="viewed__grid">
+                @@loop("components/bem-blocks/_viewed-item.html", "components/bem-blocks/items-viewed.json")
             </div>
         </div>
 
+        <div class="category">
+            <h3 class="category__title">Популярные категории</h3>
+            <div class="category__grid">
+                @@loop("components/bem-blocks/_category-item.html", "components/bem-blocks/items.json")
+            </div>
+        </div>
+
+        @@include('components/page-blocks/faq/_faq.html')
+        @@include('components/page-blocks/subscription/_subscription.html')
     </main>
 
     @@include('components/page-blocks/_scripts.html')

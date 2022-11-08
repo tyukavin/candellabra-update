@@ -1,0 +1,38 @@
+.subscription {
+    display: flex;
+    align-items: center;
+    margin: 96px 0 69px;
+
+    &__content {
+        max-width: 476px;
+        padding-right: 20px;
+        margin-left: 25px;
+
+        .title-content {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #787E88;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex: 1;
+
+        .input {
+            flex: 2;
+            margin-right: 10px;
+        }
+
+        .btn {
+            flex: 1;
+        }
+    }
+}

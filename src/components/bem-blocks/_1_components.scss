@@ -1,3 +1,11 @@
+.fancybox__backdrop {
+    background: rgba(0,0,0,0.65);
+}
+
+.fancybox__toolbar {
+    background: none;
+}
+
 .show-more {
     @include no-btn();
     background: #F6F8F9;

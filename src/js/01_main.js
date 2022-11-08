@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+    Fancybox.bind("[data-fancybox]", {
+        Thumbs: {
+            autoStart: false,
+        },
+        Toolbar: {
+            display: [
+              { id: "prev", position: "center" },
+              { id: "counter", position: "center" },
+              { id: "next", position: "center" },
+              "zoom",
+              "close",
+            ],
+          },
+    });
+
     $('.js-related-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,

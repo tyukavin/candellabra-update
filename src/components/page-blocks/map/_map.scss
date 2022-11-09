@@ -9,12 +9,13 @@
 
     &__content {
         display: flex;
+        height: 505px;
     }
 
     &__nav {
-        overflow-y: auto;
+        overflow-y: scroll;
         margin-right: 35px;
-        max-height: 505px;
+        height: 100%;
         width: 344px;
 
         &::-webkit-scrollbar {
@@ -46,6 +47,7 @@
             justify-content: space-between;
             padding: 11px 10px 11px 20px;
             align-items: center;
+            transition: all .2s ease;
 
             &.active {
                 background: #F6F8F9;
@@ -58,6 +60,7 @@
         }
 
         &-city {
+            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -66,6 +69,23 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 17px;
+
+            &.active {
+                font-weight: 700;
+
+                .icon {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &-list {
+                max-height: 0;
+                overflow: hidden;
+
+                &.show {
+                    max-height: 1000px;
+                }
+            }
         }
 
         .icon {
@@ -73,6 +93,44 @@
             height: 24px;
             width: 24px;
             fill: #969CA3;
+            transition: transform .2s ease;
         }
+
+        .list-city {
+            max-height: 0;
+            overflow: hidden;
+
+            &.show {
+                max-height: 1000px;
+            }
+        }
+    }
+}
+
+.city-item {
+    display: flex;
+    padding: 0 20px;
+    margin: 10px 0;
+
+    &__img {
+        flex: none;
+        margin-right: 15px;
+
+        img {
+            margin-top: -3px;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        color: #969CA3;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
     }
 }

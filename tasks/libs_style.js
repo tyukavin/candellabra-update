@@ -1,7 +1,8 @@
 const plugins = [
     "src/scss/slick.css",
     "src/scss/slick-theme.css",
-    "src/scss/fancybox.css"
+    "src/scss/fancybox.css",
+    "src/scss/nice-select.css"
 ];
 
 const {

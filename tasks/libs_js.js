@@ -1,7 +1,8 @@
 const plugins = [
     "src/js/jquery-3.6.1.min.js",
     "src/js/slick.min.js",
-    "src/js/fancybox.umd.js"
+    "src/js/fancybox.umd.js",
+    "src/js/jquery.nice-select.min.js"
 ];
 const {
 	src,

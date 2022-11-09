@@ -15,10 +15,15 @@ $(document).ready(function() {
           },
     });
 
+    $('.btn-select').niceSelect();
+
     $('.js-related-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
+        prevArrow: '.product-related__slider-side--prev',
+        nextArrow: '.product-related__slider-side--next',
+        infinite: false,
     });
 
     $('.js-slider-main').slick({
@@ -41,6 +46,25 @@ $(document).ready(function() {
         vertical: true,
         adaptiveHeight: true,
         centerMode: true,
+    });
+
+    $('.faq__item').click(function() {
+        $(this).toggleClass('show');
+    });
+
+    $('.js-btn-show-more').click(function() {
+        $(this).text($(this).text() == 'Показать больше' ? 'Скрыть' : 'Показать больше');
+        $('.product-description__content').toggleClass('show');
+    });
+
+    $('.map__nav-countries').click(function() {
+        $(this).toggleClass('active');
+        $('.list-city').toggleClass('show');
+    });
+
+    $('.map__nav-city').click(function() {
+        $(this).toggleClass('active');
+        $(this).parent().find('.map__nav-city-list').toggleClass('show');
     });
 
 });

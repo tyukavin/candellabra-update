@@ -8,12 +8,17 @@
 
 .show-more {
     @include no-btn();
-    background: #F6F8F9;
+    background-color: #F6F8F9;
     border-radius: 5px;
     padding: 12px 30px;
     font-size: 12px;
     font-weight: 600;
     text-align: center;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: darken(#F6F8F9, 5%);
+    }
 }
 
 .btn-select {
@@ -21,9 +26,33 @@
     border-radius: 10px;
     color: #969CA3;
     width: 378px;
-    padding: 13px 15px;
+    padding: 7px 15px;
+    height: 56px;
     font-size: 14px;
-    text-align: center;
+    text-align: center !important;
+    float: none;
+
+    &::after {
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+        right: 23px;
+        height: 8px;
+        width: 8px;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .option {
+        text-align: center;
+
+        &.selected.focus {
+            background-color: inherit;
+            font-weight: 400;
+            color: #000;
+        }
+    }
 }
 
 .btn-stroke {

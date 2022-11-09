@@ -42,14 +42,19 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="product-slider__main js-slider-main">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
-                            <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                        <div class="product-slider__main">
+                            <div class="product-slider__preview">
+                                <span>Увеличить фото</span>
+                            </div>
+                            <div class="js-slider-main">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                                <img src="img/product-item.jpg" data-fancybox="product-main" data-caption="Статуэтка декоративная “Egg Small”" alt="Статуэтка декоративная “Egg Small”">
+                            </div>
                         </div>
                     </div>
 
@@ -57,13 +62,11 @@
                         <div class="product-video__title">Видео-обзор</div>
                         <div class="product-video__grid">
                             <div class="product-video__item">
-                                <img src="img/play-icon.svg" alt="play"
-                                    class="icon">
+                                <img src="img/play-icon.svg" alt="play" class="icon">
                                 <img src="img/video/1-video.jpg" alt="Видео 1">
                             </div>
                             <div class="product-video__item">
-                                <img src="img/play-icon.svg" alt="play"
-                                    class="icon">
+                                <img src="img/play-icon.svg" alt="play" class="icon">
                                 <img src="img/video/2-video.jpg" alt="Видео 2">
                             </div>
                         </div>
@@ -90,9 +93,7 @@
                             </div>
                         </div>
                         <div class="product-details__section">
-                            <h5 class="product-details__section-title">Материалы
-                                и
-                                цвет</h5>
+                            <h5 class="product-details__section-title">Материалы и цвет</h5>
                             <div class="product-details__section-row">
                                 <div class="product-details__section-name">Сиденья</div>
                                 <div class="product-details__section-value">Ткань</div>
@@ -122,18 +123,15 @@
                                 <div class="product-details__section-value">Да</div>
                             </div>
                             <div class="product-details__section-row">
-                                <div class="product-details__section-name">Мягкое
-                                    сиденье</div>
+                                <div class="product-details__section-name">Мягкое сиденье</div>
                                 <div class="product-details__section-value">Да</div>
                             </div>
                             <div class="product-details__section-row">
-                                <div class="product-details__section-name">Регулировка
-                                    высоты</div>
+                                <div class="product-details__section-name">Регулировка высоты</div>
                                 <div class="product-details__section-value">Нет</div>
                             </div>
                             <div class="product-details__section-row">
-                                <div class="product-details__section-name">Макс.
-                                    нагрузка</div>
+                                <div class="product-details__section-name">Макс. нагрузка</div>
                                 <div class="product-details__section-value">100
                                     кг</div>
                             </div>
@@ -162,35 +160,44 @@
                             <div class="sale">-24%</div>
                         </div>
                         <div class="product-related">
-                            <div class="product-related__head">Другие варианты
-                                товара</div>
-                            <div class="product-related__slider
-                                js-related-slider">
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-1.jpg" alt="">
+                            <div class="product-related__head">Другие варианты товара</div>
+                            <div class="product-related__slider">
+                                <button class="product-related__slider-side product-related__slider-side--prev">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Arrow-side"/>
+                                    </svg>
+                                </button>
+                                <div class="product-related__slider-inner js-related-slider">
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-1.jpg" alt="Статуэтка">
+                                    </div>
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-2.jpg" alt="Статуэтка">
+                                    </div>
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-3.jpg" alt="Статуэтка">
+                                    </div>
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-4.jpg" alt="Статуэтка">
+                                    </div>
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-1.jpg" alt="Статуэтка">
+                                    </div>
+                                    <div class="product-related__slider-item">
+                                        <img src="img/related/item-2.jpg" alt="Статуэтка">
+                                    </div>
                                 </div>
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-2.jpg" alt="">
-                                </div>
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-3.jpg" alt="">
-                                </div>
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-4.jpg" alt="">
-                                </div>
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-1.jpg" alt="">
-                                </div>
-                                <div class="product-related__slider-item">
-                                    <img src="./img/related/item-2.jpg" alt="">
-                                </div>
+                                <button class="product-related__slider-side product-related__slider-side--next">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Arrow-side"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
                         <div class="product-size">
                             <div class="product-size__head">Размер</div>
-                            <select class="btn-select" name="product-size"
-                                id="">
+                            <select class="btn-select" name="product-size" id="">
                                 <option value="">S (4 см) - 56 700р</option>
                                 <option value="">M (8 см) - 60 200р</option>
                                 <option value="">L (12 см) - 64 700р</option>
@@ -200,8 +207,7 @@
                         <div class="product-actions">
                             <button class="btn-stroke">Купить в 1 клик</button>
                             <button class="btn btn--primary">В корзину</button>
-                            <button class="btn btn--secondary">Забронировать в
-                                магазине</button>
+                            <button class="btn btn--secondary">Забронировать в магазине</button>
                         </div>
 
                         <div class="product-buypart">
@@ -302,8 +308,12 @@
                                 Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. Крайне выгодное
                                 и полезное Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. 
                             </p>
+                            <p>
+                                Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. Крайне выгодное
+                                и полезное Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. 
+                            </p>
                         </div>
-                        <button class="show-more">Показать больше</button>
+                        <button class="show-more js-btn-show-more">Показать больше</button>
                     </div>
                 </div>
             </div>

@@ -208,6 +208,8 @@ img {
         &__item {
             cursor: pointer;
             position: relative;
+            display: inline-block;
+            text-decoration: none;
     
             &:hover {
     

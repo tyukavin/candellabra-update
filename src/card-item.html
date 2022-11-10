@@ -207,7 +207,7 @@
                         <div class="product-actions">
                             <button class="btn-stroke">Купить в 1 клик</button>
                             <button class="btn btn--primary">В корзину</button>
-                            <button class="btn btn--secondary">Забронировать в магазине</button>
+                            <button class="btn btn--secondary" data-fancybox="dialog" data-src="#booking-modal">Забронировать в магазине</button>
                         </div>
 
                         <div class="product-buypart">
@@ -340,6 +340,7 @@
         @@include('components/page-blocks/subscription/_subscription.html')
     </main>
 
+    @@include('components/page-blocks/booking-modal/_booking.html')
     @@include('components/page-blocks/_scripts.html')
 </body>
 

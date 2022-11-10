@@ -6,6 +6,21 @@
     background: none;
 }
 
+.modal {
+    background-color: #fff;
+    border-radius: 10px;
+
+    & > .carousel__button.is-close {
+        color: #323F4C;
+        top: 20px;
+        right: 22px;
+
+        svg {
+            filter: none
+        }
+    }
+}
+
 .show-more {
     @include no-btn();
     background-color: #F6F8F9;

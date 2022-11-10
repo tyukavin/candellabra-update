@@ -6,16 +6,18 @@ $(document).ready(function() {
         },
         Toolbar: {
             display: [
-              { id: "prev", position: "center" },
-              { id: "counter", position: "center" },
-              { id: "next", position: "center" },
-              "zoom",
-              "close",
+                { id: "prev", position: "center" },
+                { id: "counter", position: "center" },
+                { id: "next", position: "center" },
+                "zoom",
+                "close",
             ],
-          },
+        },
+        dragToClose: false
     });
 
     $('.btn-select').niceSelect();
+    $('.btn-select-booking').niceSelect();
 
     $('.js-related-slider').slick({
         slidesToShow: 4,

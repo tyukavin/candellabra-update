@@ -221,7 +221,7 @@
                         <div class="product-actions">
                             <button class="btn-stroke">Купить в 1 клик</button>
                             <button class="btn btn--primary">В корзину</button>
-                            <button class="btn btn--secondary">Забронировать в магазине</button>
+                            <button class="btn btn--secondary" data-fancybox="dialog" data-src="#booking-modal">Забронировать в магазине</button>
                         </div>
 
                         <div class="product-buypart">
@@ -648,6 +648,49 @@
 </div>
     </main>
 
+    <div id="booking-modal" class="modal modal-booking">
+    <h2>Бронь товара</h2>
+
+    <div class="modal-booking__items">
+        <div class="modal-booking-item">
+            <div class="modal-booking-item__img">
+                <img src="img/product-item.jpg" alt="item">
+            </div>
+            <div class="modal-booking-item__name">Статуэтка декоративная “Egg Small”</div>
+            <div class="modal-booking-item__count"><span>1</span> шт</div>
+            <div class="modal-booking-item__price">56 700 ₽</div>
+        </div>
+    </div>
+
+    <div class="modal-booking__form">
+        <div class="modal-booking__form-row">
+            <div class="mb-col-12">
+                <div class="modal-booking__form-wrap">
+                    <label class="modal-booking__form-label" for="mb-store">Магазин</label>
+                    <div class="modal-booking__form-count">Остаток: <span>25 шт</span></div>
+                </div>
+                <select class="btn-select-booking" name="mb-store" id="mb-store">
+                    <option value="">Санкт-Петербург, ТЦ “Жемчужная плаза”</option>
+                    <option value="">Москва, ТЦ “Атриум”</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-booking__form-row">
+            <div class="mb-col-5">
+                <label class="modal-booking__form-label" for="mb-name">Имя</label>
+                <input type="text" id="mb-name" class="mb-input" placeholder="Имя">
+            </div>
+            <div class="mb-col-5">
+                <label class="modal-booking__form-label" for="mb-phone">Телефон</label>
+                <input type="text" id="mb-phone" class="mb-input mb-input--center" placeholder="8-999-999-99-99">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-booking__action">
+        <button class="btn btn--secondary">Забронировать до 22:00</button>
+    </div>
+</div>
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 

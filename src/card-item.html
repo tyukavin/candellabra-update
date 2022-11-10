@@ -207,13 +207,13 @@
                         <div class="product-actions">
                             <button class="btn-stroke">Купить в 1 клик</button>
                             <button class="btn btn--primary">В корзину</button>
-                            <button class="btn btn--secondary" data-fancybox="dialog" data-src="#booking-modal">Забронировать в магазине</button>
+                            <button class="btn btn--secondary" data-fancybox data-src="#booking-modal">Забронировать в магазине</button>
                         </div>
 
                         <div class="product-buypart">
                             <img src="img/dolyami-logo-black.png" alt="Долями">
                             <div class="product-buypart__text">
-                                4 платежа по <a href="#">12000 руб</a>
+                                4 платежа по <a href="#dolyami-modal" data-fancybox>12000 руб</a>
                             </div>
                         </div>
                     </div>
@@ -341,6 +341,7 @@
     </main>
 
     @@include('components/page-blocks/booking-modal/_booking.html')
+    @@include('components/page-blocks/dolyami-modal/_dolyami.html')
     @@include('components/page-blocks/_scripts.html')
 </body>
 

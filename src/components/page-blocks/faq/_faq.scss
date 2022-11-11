@@ -1,6 +1,5 @@
 .faq {
     margin-top: 70px;
-    max-width: 435px;
 
     &__title {
         font-size: 18px;
@@ -61,5 +60,17 @@
                 transition: .2s ease;
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .faq {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .faq {
+        max-width: 435px;
     }
 }

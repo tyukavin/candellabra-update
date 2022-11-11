@@ -98,10 +98,12 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-direction: column;
 
-        &-left {
-            width: 565px;
-            margin-right: 65px;
+        &-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
     }
 
@@ -154,6 +156,7 @@ img {
             font-size: 14px;
             font-weight: 500;
             z-index: 5;
+            pointer-events: none;
         }
 
         &__step {
@@ -230,8 +233,9 @@ img {
 
     // Характеристики товара
     .product-details {
-        flex: 1 0 0;
-        margin-right: 35px;
+        flex: 1;
+        margin-right: 65px;
+        min-width: 565px;
     
         h4 {
             font-size: 18px;

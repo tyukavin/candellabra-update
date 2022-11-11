@@ -1,17 +1,28 @@
 .subscription {
     display: flex;
-    align-items: center;
     margin: 96px 0 69px;
+    flex-direction: column;
+
+    .send-icon {
+        display: none;
+        flex: none;
+
+        &--mobile {
+            display: block;
+            flex: none;
+            margin-right: 20px;
+        }
+    }
 
     &__content {
-        max-width: 476px;
-        padding-right: 20px;
-        margin-left: 25px;
+        margin-bottom: 15px;
 
         .title-content {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
         }
 
         p {
@@ -24,15 +35,52 @@
 
     &__form {
         display: flex;
+        flex-direction: column;
         flex: 1;
 
         .input {
             flex: 2;
-            margin-right: 10px;
+            margin-bottom: 12px;
         }
 
         .btn {
             flex: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscription {
+        flex-direction: row;
+        align-items: center;
+
+        .send-icon {
+            display: block;
+
+            &--mobile {
+                display: none;
+            }
+        }
+
+        &__content {
+            padding-right: 20px;
+            margin-left: 25px;
+            margin-bottom: 0;
+            max-width: 476px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .subscription {
+
+        &__form {
+            flex-direction: row;
+
+            .input {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
         }
     }
 }

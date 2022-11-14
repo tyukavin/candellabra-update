@@ -73,37 +73,35 @@
                         </div>
                         <div class="product-related">
                             <div class="product-related__head">Другие варианты товара</div>
-                            <div class="product-related__slider">
+                            <div class="product-related__slider product-related__slider--desktop">
                                 <button class="product-related__slider-side product-related__slider-side--prev">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#sprite--Arrow-side"/>
                                     </svg>
                                 </button>
                                 <div class="product-related__slider-inner js-related-slider">
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-1.jpg" alt="Статуэтка">
-                                    </div>
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-2.jpg" alt="Статуэтка">
-                                    </div>
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-3.jpg" alt="Статуэтка">
-                                    </div>
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-4.jpg" alt="Статуэтка">
-                                    </div>
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-1.jpg" alt="Статуэтка">
-                                    </div>
-                                    <div class="product-related__slider-item">
-                                        <img src="img/related/item-2.jpg" alt="Статуэтка">
-                                    </div>
+                                    @@loop("components/bem-blocks/_related-item.html", [
+                                        {"img": "item-1"},
+                                        {"img": "item-2"},
+                                        {"img": "item-3"},
+                                        {"img": "item-4"},
+                                        {"img": "item-1"},
+                                        {"img": "item-2"},
+                                    ])
                                 </div>
                                 <button class="product-related__slider-side product-related__slider-side--next">
                                     <svg class="icon">
                                         <use xlink:href="img/sprite.svg#sprite--Arrow-side"/>
                                     </svg>
                                 </button>
+                            </div>
+                            <div class="product-related__slider product-related__slider--mobile">
+                                @@loop("components/bem-blocks/_viewed-item-mobile.html", [
+                                    {"img": "1-mob"},
+                                    {"img": "2-mob"},
+                                    {"img": "1-mob"},
+                                    {"img": "2-mob"},
+                                ])
                             </div>
                         </div>
 
@@ -136,11 +134,17 @@
                         <div class="product-video__title">Видео-обзор</div>
                         <div class="product-video__grid">
                             <a href="https://www.youtube.com/watch?v=y878Au72bvc" class="product-video__item" data-fancybox="video-gallery">
-                                <img src="img/play-icon.svg" alt="play" class="icon">
+                                <picture class="icon">
+                                    <source srcset="img/play-icon.svg" media="(min-width: 768px)">
+                                    <img src="img/play-icon-mob.svg" alt="play">
+                                </picture>
                                 <img src="img/video/1-video.jpg" alt="Видео 1">
                             </a>
                             <a href="https://www.youtube.com/watch?v=y878Au72bvc" class="product-video__item" data-fancybox="video-gallery">
-                                <img src="img/play-icon.svg" alt="play" class="icon">
+                                <picture class="icon">
+                                    <source srcset="img/play-icon.svg" media="(min-width: 768px)">
+                                    <img src="img/play-icon-mob.svg" alt="play">
+                                </picture>
                                 <img src="img/video/2-video.jpg" alt="Видео 2">
                             </a>
                         </div>
@@ -285,18 +289,26 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="product-coll-desc">
                         <div class="product-collection">
                             <div class="product-collection__head">
                                 <div class="product-collection__title">Из этой коллекции</div>
                                 <a href="#">Перейти к коллекции</a>
                             </div>
-                            <div class="product-collection__list">
-                                @@loop("components/bem-blocks/_viewed-item.html", [
+                            <div class="product-collection__list product-collection__list--desktop">
+                                @@loop("components/bem-blocks/_viewed-item-desktop.html", [
                                     {"img": "1-item"},
                                     {"img": "2-item"},
                                     {"img": "3-item"},
                                     {"img": "4-item"}
+                                ])
+                            </div>
+                            <div class="product-collection__list product-collection__list--mobile">
+                                @@loop("components/bem-blocks/_viewed-item-mobile.html", [
+                                    {"img": "1-mob"},
+                                    {"img": "2-mob"},
+                                    {"img": "1-mob"},
+                                    {"img": "2-mob"}
                                 ])
                             </div>
                         </div>
@@ -325,8 +337,11 @@
 
         <div class="viewed">
             <h3 class="viewed__title">Недавно просмотренные</h3>
-            <div class="viewed__grid">
-                @@loop("components/bem-blocks/_viewed-item.html", "components/bem-blocks/items-viewed.json")
+            <div class="viewed__grid viewed__grid--desktop">
+                @@loop("components/bem-blocks/_viewed-item-desktop.html", "components/bem-blocks/items-viewed-desktop.json")
+            </div>
+            <div class="viewed__grid viewed__grid--mobile">
+                @@loop("components/bem-blocks/_viewed-item-mobile.html", "components/bem-blocks/items-viewed-mobile.json")
             </div>
         </div>
 

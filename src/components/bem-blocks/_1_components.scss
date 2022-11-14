@@ -55,16 +55,32 @@
 
 .show-more {
     @include no-btn();
-    background-color: #F6F8F9;
-    border-radius: 5px;
-    padding: 12px 30px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     transition: background-color .2s ease;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: underline;
 
     &:hover {
         background-color: darken(#F6F8F9, 5%);
+    }
+}
+
+.btn-cart {
+    @include no-btn();
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+
+    img {
+        margin-right: 6px;
+    }
+
+    span {
+        margin-top: 2px;
     }
 }
 
@@ -72,9 +88,9 @@
     border: 1px solid #CFD7DF;
     border-radius: 10px;
     color: #969CA3;
-    width: 378px;
-    padding: 7px 15px;
-    height: 56px;
+    width: 100%;
+    padding: 0 15px;
+    height: 42px;
     font-size: 14px;
     text-align: center !important;
     float: none;
@@ -104,6 +120,7 @@
 
 .btn-stroke {
     @include no-btn();
+    font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     position: relative;
@@ -134,8 +151,9 @@
     @include no-btn();
     border-radius: 10px;
     display: inline-block;
-    padding: 18px 20px;
+    padding: 13px 20px;
     width: 100%;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
     transition: background-color .2s ease;
@@ -170,4 +188,29 @@
     line-height: 17px;
     color: rgba(50, 63, 76, 0.5);
     padding: 17px 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .btn {
+        font-size: 16px;
+        padding: 18px 20px;
+    }
+
+    .btn-select {
+        height: 56px;
+        padding: 7px 15px;
+        width: 378px;
+    }
+
+    .btn-stroke {
+        font-size: 16px;
+    }
+
+    .show-more {
+        border-radius: 5px;
+        padding: 12px 30px;
+        font-weight: 600;
+        background-color: #F6F8F9;
+        text-decoration: none;
+    }
 }

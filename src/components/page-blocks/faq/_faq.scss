@@ -1,15 +1,14 @@
 .faq {
-    margin-top: 70px;
+    margin-top: 44px;
 
     &__title {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 22px;
         margin-bottom: 13px;
     }
 
     &__item {
-        border-bottom: 1px solid rgba(226, 226, 226, 0.66);
 
         &:last-child {
             border-bottom: none;
@@ -20,7 +19,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 17px 0;
+            padding: 12px 0;
+            font-size: 14px;
             font-weight: 500;
             transition: color .2s ease;
 
@@ -65,7 +65,22 @@
 
 @media screen and (min-width: 768px) {
     .faq {
+        margin-top: 70px;
         max-width: 70%;
+
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__item {
+            border-bottom: 1px solid rgba(226, 226, 226, 0.66);
+
+            &-head {
+                font-size: 16px;
+                padding: 17px 0;
+            }
+        }
     }
 }
 

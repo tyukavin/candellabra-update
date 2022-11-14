@@ -1,6 +1,6 @@
 .subscription {
     display: flex;
-    margin: 96px 0 69px;
+    margin: 44px 0;
     flex-direction: column;
 
     .send-icon {
@@ -18,7 +18,7 @@
         margin-bottom: 15px;
 
         .title-content {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             margin-bottom: 15px;
             display: flex;
@@ -27,9 +27,9 @@
 
         p {
             color: #787E88;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
-            line-height: 22px;
+            line-height: 20px;
         }
     }
 
@@ -53,6 +53,7 @@
     .subscription {
         flex-direction: row;
         align-items: center;
+        margin: 96px 0 69px;
 
         .send-icon {
             display: block;
@@ -67,6 +68,15 @@
             margin-left: 25px;
             margin-bottom: 0;
             max-width: 476px;
+
+            .title-content {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
         }
     }
 }

@@ -1,26 +1,33 @@
 .viewed {
-    margin-top: 76px;
+    margin-top: 44px;
 
     &__title {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 600;
-        line-height: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 15px;
     }
 
     &__grid {
         display: flex;
-        gap: 43.5px;
+        overflow-x: auto;
+        padding-bottom: 15px;
+
+        &--desktop {
+            display: none;
+        }
+
+        @include scrollbarItems();
     }
 }
 
 .viewed-item {
-    max-width: 107px;
+    flex: none;
+    margin-right: 43px;
     text-decoration: none;
-    transition: transform .2s ease;
+    width: 107px;
 
-    &:hover {
-        transform: translateY(-10px);
+    &:last-child {
+        margin-right: 0;
     }
 
     &__img {
@@ -40,5 +47,77 @@
         font-weight: 700;
         line-height: 13px;
         padding: 0 5px;
+    }
+}
+
+.viewed-item-mobile {
+    flex: none;
+    display: flex;
+    margin-right: 5px;
+    flex-direction: column;
+    text-decoration: none;
+    width: 133px;
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__name {
+        font-size: 10px;
+        line-height: 13px;
+        font-weight: 500;
+        margin-bottom: 7px;
+        padding-right: 5px;
+    }
+
+    &__count {
+        color: #838E99;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13px;
+        margin-bottom: 7px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+
+        &-current {
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 13px;
+            margin-right: 6px;
+        }
+
+        &-old {
+            color: #B8C1CA;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12px;
+            text-decoration: line-through;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .viewed {
+        margin-top: 76px;
+
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        &__grid {
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: flex;
+            }
+        }
     }
 }

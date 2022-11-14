@@ -58,3 +58,15 @@
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
+
+@mixin scrollbarItems() {
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #323f4c;
+        border-radius: 10px;
+    }
+}

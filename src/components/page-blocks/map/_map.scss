@@ -1,36 +1,25 @@
 .map {
-    margin-top: 76px;
+    margin-top: 44px;
 
     &__title {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 23px;
     }
 
     &__content {
         display: flex;
-        height: 505px;
+        height: auto;
+    }
+
+    &__main {
+        display: none;
     }
 
     &__nav {
         overflow-y: scroll;
-        margin-right: 35px;
         height: 100%;
-        width: 344px;
-
-        &::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: #d8d8d8;
-            border-radius: 10px;
-        }
-
-        &::-webkit-scrollbar-track {
-            border-radius: 10px;
-        }
+        width: 100%;
 
         ul {
             list-style: none;
@@ -40,9 +29,9 @@
         &-countries {
             cursor: pointer;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 20px;
-            height: 55px;
+            height: 45px;
             display: flex;
             justify-content: space-between;
             padding: 11px 10px 11px 20px;
@@ -132,5 +121,42 @@
         font-size: 12px;
         font-weight: 500;
         line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .map {
+        margin-top: 76px;
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        &__nav {
+
+            &-countries {
+                font-size: 16px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .map {
+
+        &__content {
+            height: 505px;
+        }
+
+        &__main {
+            display: block;
+        }
+
+        &__nav {
+            margin-right: 35px;
+            width: 344px;
+        }
     }
 }

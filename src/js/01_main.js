@@ -48,6 +48,16 @@ $(document).ready(function() {
         vertical: true,
         adaptiveHeight: true,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 6,
+                    infinite: false
+                }
+            }
+        ]
     });
 
     $('.faq__item').click(function() {

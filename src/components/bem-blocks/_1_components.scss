@@ -6,6 +6,10 @@
     background: none;
 }
 
+.fancybox__slide {
+    padding: 20px 0;
+}
+
 .modal {
     display: none;
     background-color: #fff;
@@ -14,8 +18,8 @@
 
     & > .carousel__button.is-close {
         color: #323F4C;
-        top: 20px;
-        right: 22px;
+        top: 12px;
+        right: 12px;
 
         svg {
             filter: none
@@ -188,6 +192,16 @@
     line-height: 17px;
     color: rgba(50, 63, 76, 0.5);
     padding: 17px 25px;
+}
+
+@media screen and (min-width: 576px) {
+    .modal {
+
+        & > .carousel__button.is-close {
+            top: 20px;
+            right: 22px;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

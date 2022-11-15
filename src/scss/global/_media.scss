@@ -45,6 +45,14 @@
             flex-direction: row;
             margin-bottom: 46px;
 
+            &__dotted {
+                display: none;
+            }
+
+            &__preview {
+                display: flex;
+            }
+
             &__nav {
                 flex: none;
                 margin-right: 30px;
@@ -54,11 +62,24 @@
                     margin-bottom: 28px;
                     margin-left: 0;
                     border-radius: 0;
+                    max-width: none;
                     width: auto;
                 }
 
                 .slick-track {
                     display: block;
+                }
+
+                .slider-nav {
+
+                    &__link {
+                        display: none;
+                    }
+
+                    .js-slider-nav {
+                        padding: 0;
+                        width: 100%;
+                    }
                 }
             }
 
@@ -81,6 +102,7 @@
             padding-right: 89px;
             max-width: 530px;
             min-height: 670px;
+            margin-bottom: 32px;
 
             &__price {
                 margin-bottom: 0;
@@ -121,6 +143,10 @@
                 & + .product-actions {
                     margin-top: 31px;
                 }
+            }
+
+            .product-buypart {
+                margin-top: 34px;
             }
             
             .product-related {
@@ -198,6 +224,15 @@
             h4 {
                 font-size: 18px;
                 margin-bottom: 15px;
+            }
+
+            .show-more {
+                display: none;
+            }
+
+            &__inner {
+                max-height: inherit;
+                margin-bottom: 0;
             }
 
             &__section {

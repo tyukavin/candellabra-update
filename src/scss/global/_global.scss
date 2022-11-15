@@ -122,14 +122,60 @@ img {
         margin-bottom: 32px;
         display: flex;
         flex-direction: column-reverse;
+
+        &__dotted {
+            position: relative;
+
+            &-line {
+                margin-bottom: 15px;
+            }
+
+            &-custom {
+                position: absolute;
+                top: 20%;
+                left: 0;
+                width: 100%;
+                transform: translateY(-50%);
+
+                .slick-dots {
+                    bottom: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        height: 2px;
+                        background-color: transparent;
+                        margin: 0;
+                        flex: 1;
+
+                        &.slick-active {
+                            background-color: #323F4C;
+                        }
+
+                        button {
+                            height: 1px;
+                            padding: 0;
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     
         &__nav {
             position: relative;
     
             img {
-                margin-left: 33px;
+                border: 1px solid transparent;
+                margin-left: 36px;
                 border-radius: 5px;
                 min-width: 19px;
+                max-width: 19px;
 
                 &:first-child {
                     margin-left: 0;
@@ -142,6 +188,26 @@ img {
             
             .slick-track {
                 display: flex;
+            }
+
+            .slider-nav {
+                display: flex;
+                justify-content: space-between;
+
+                &__link {
+                    flex: none;
+                    margin-right: 15px;
+
+                    img {
+                        max-width: none;
+                    }
+                }
+
+                .js-slider-nav {
+                    padding: 0 15px;
+                    margin-bottom: 0;
+                    width: calc(100% - 35px);
+                }
             }
         }
     
@@ -165,7 +231,7 @@ img {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            display: flex;
+            display: none;
             padding: 8px 16px;
             border-radius: 24px;
             background-color: hsla(0,0%,100%,.9);
@@ -183,7 +249,7 @@ img {
             background: rgb(255,255,255);
             position: absolute;
             left: 0;
-            height: 35px;
+            height: 55px;
             width: 100%;
             display: none !important;
             align-items: center;
@@ -198,11 +264,17 @@ img {
             &--prev {
                 background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
                 bottom: 0;
+                padding-top: 20px;
             }
 
             &--next {
                 background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%);
                 top: 0;
+                padding-bottom: 20px;
+
+                &.slick-disabled {
+                    visibility: hidden;
+                }
 
                 .icon {
                     transform: rotate(180deg);
@@ -269,6 +341,16 @@ img {
             font-weight: 600;
             margin-bottom: 10px;
         }
+
+        &__inner {
+            max-height: 85px;
+            overflow: hidden;
+            margin-bottom: 15px;
+
+            &.show {
+                max-height: 1000px;
+            }
+        }
     
         &__section {
     
@@ -316,7 +398,7 @@ img {
     // Информация о товаре
     .product-info {
         background-color: #fff;
-        margin-bottom: 32px;
+        margin-bottom: 21px;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -472,7 +554,11 @@ img {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 34px;
+            margin-top: 20px;
+
+            img {
+                max-width: 96px;
+            }
         
             &__text {
                 color: #969CA3;

@@ -36,25 +36,30 @@
                 <div class="product__content-section">
                     <div class="product-slider">
                         <div class="product-slider__nav">
-                            <button class="product-slider__step product-slider__step--next">
+                            <button class="product-slider__step product-slider__step--next js-slider-nav-prev">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#sprite--Step"/>
                                 </svg>
                             </button>
                             <div class="product-slider__dotted">
                                 <hr class="product-slider__dotted-line">
-                                <div class="js-slick-dots"></div>
+                                <div class="product-slider__dotted-custom js-slick-dots"></div>
                             </div>
-                            <div class="js-slider-nav">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
-                                <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                            <div class="slider-nav">
+                                <div class="js-slider-nav">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                    <img src="img/product-item.jpg" alt="Статуэтка декоративная “Egg Small”">
+                                </div>
+                                <a class="slider-nav__link" href="https://www.youtube.com/watch?v=y878Au72bvc" data-fancybox>
+                                    <img src="img/slider-mob-play.svg" alt="video">
+                                </a>
                             </div>
-                            <button class="product-slider__step product-slider__step--prev">
+                            <button class="product-slider__step product-slider__step--prev js-slider-nav-next">
                                 <svg class="icon">
                                     <use xlink:href="img/sprite.svg#sprite--Step"/>
                                 </svg>
@@ -301,74 +306,72 @@
                 <div class="product__content-section">
                     <div class="product-details">
                         <h4>Характеристики</h4>
-                        <div class="product-details__section">
-                            <h5 class="product-details__section-title">Размеры</h5>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Высота</div>
-                                <div class="product-details__section-value">160
-                                    см</div>
+                        <div class="product-details__inner">
+                            <div class="product-details__section">
+                                <h5 class="product-details__section-title">Размеры</h5>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Высота</div>
+                                    <div class="product-details__section-value">160 см</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Ширина</div>
+                                    <div class="product-details__section-value">120 см</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Длина</div>
+                                    <div class="product-details__section-value">50 см</div>
+                                </div>
                             </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Ширина</div>
-                                <div class="product-details__section-value">120
-                                    см</div>
+                            <div class="product-details__section">
+                                <h5 class="product-details__section-title">Материалы и цвет</h5>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Сиденья</div>
+                                    <div class="product-details__section-value">Ткань</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Ножки</div>
+                                    <div class="product-details__section-value">Сталь</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Цвет</div>
+                                    <div class="product-details__section-value">Бежевый</div>
+                                </div>
                             </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Длина</div>
-                                <div class="product-details__section-value">50
-                                    см</div>
-                            </div>
-                        </div>
-                        <div class="product-details__section">
-                            <h5 class="product-details__section-title">Материалы и цвет</h5>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Сиденья</div>
-                                <div class="product-details__section-value">Ткань</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Ножки</div>
-                                <div class="product-details__section-value">Сталь</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Цвет</div>
-                                <div class="product-details__section-value">Бежевый</div>
-                            </div>
-                        </div>
-                        <div class="product-details__section">
-                            <h5 class="product-details__section-title">Общие</h5>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Гарантия</div>
-                                <div class="product-details__section-value">5
-                                    лет</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Стиль</div>
-                                <div class="product-details__section-value">Классика</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Подлокотники</div>
-                                <div class="product-details__section-value">Да</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Мягкое сиденье</div>
-                                <div class="product-details__section-value">Да</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Регулировка высоты</div>
-                                <div class="product-details__section-value">Нет</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Макс. нагрузка</div>
-                                <div class="product-details__section-value">100
-                                    кг</div>
-                            </div>
-                            <div class="product-details__section-row">
-                                <div class="product-details__section-name">Коллекция</div>
-                                <div class="product-details__section-value">
-                                    <a href="#">Kelly Lounge</a>
+                            <div class="product-details__section">
+                                <h5 class="product-details__section-title">Общие</h5>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Гарантия</div>
+                                    <div class="product-details__section-value">5 лет</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Стиль</div>
+                                    <div class="product-details__section-value">Классика</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Подлокотники</div>
+                                    <div class="product-details__section-value">Да</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Мягкое сиденье</div>
+                                    <div class="product-details__section-value">Да</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Регулировка высоты</div>
+                                    <div class="product-details__section-value">Нет</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Макс. нагрузка</div>
+                                    <div class="product-details__section-value">100 кг</div>
+                                </div>
+                                <div class="product-details__section-row">
+                                    <div class="product-details__section-name">Коллекция</div>
+                                    <div class="product-details__section-value">
+                                        <a href="#">Kelly Lounge</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="show-more js-btn-show-more-details">Показать больше</button>
                     </div>
 
                     <div class="product-coll-desc">
@@ -485,7 +488,7 @@
                                     и полезное Диван кровать Сиэтл, это современный диван, который разбирается в кровать размером 2100х1650 мм. Это вполне себе двухспальное место. 
                                 </p>
                             </div>
-                            <button class="show-more js-btn-show-more">Показать больше</button>
+                            <button class="show-more js-btn-show-more-desc">Показать больше</button>
                         </div>
                     </div>
                 </div>

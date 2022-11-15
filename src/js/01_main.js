@@ -36,28 +36,32 @@ $(document).ready(function() {
         asNavFor: '.js-slider-nav',
         adaptiveHeight: true,
         draggable: false,
+        infinite: false,
     });
 
     $('.js-slider-nav').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        prevArrow: '.product-slider__step--prev',
-        nextArrow: '.product-slider__step--next',
+        prevArrow: '.js-slider-nav-prev',
+        nextArrow: '.js-slider-nav-next',
         asNavFor: '.js-slider-main',
         focusOnSelect: true,
         vertical: true,
         adaptiveHeight: true,
-        centerMode: true,
         draggable: false,
+        infinite: false,
+        dots: false,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     vertical: false,
-                    slidesToShow: 6,
+                    slidesToShow: 5,
                     infinite: false,
                     centerMode: false,
                     draggable: true,
+                    appendDots: ".js-slick-dots",
+                    dots: true
                 }
             }
         ]
@@ -67,9 +71,14 @@ $(document).ready(function() {
         $(this).toggleClass('show');
     });
 
-    $('.js-btn-show-more').click(function() {
+    $('.js-btn-show-more-desc').click(function() {
         $(this).text($(this).text() == 'Показать больше' ? 'Скрыть' : 'Показать больше');
         $('.product-description__content').toggleClass('show');
+    });
+
+    $('.js-btn-show-more-details').click(function() {
+        $(this).text($(this).text() == 'Показать больше' ? 'Скрыть' : 'Показать больше');
+        $('.product-details__inner').toggleClass('show');
     });
 
     $('.map__nav-countries').click(function() {

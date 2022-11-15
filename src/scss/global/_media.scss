@@ -43,6 +43,7 @@
         .product-slider {
             height: 670px;
             flex-direction: row;
+            margin-bottom: 46px;
 
             &__nav {
                 flex: none;
@@ -54,6 +55,10 @@
                     margin-left: 0;
                     border-radius: 0;
                     width: auto;
+                }
+
+                .slick-track {
+                    display: block;
                 }
             }
 
@@ -135,6 +140,10 @@
                     &--mobile {
                         display: none;
                     }
+                }
+
+                & + .product-size {
+                    margin-top: 18px;
                 }
             }
 

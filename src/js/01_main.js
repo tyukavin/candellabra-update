@@ -48,13 +48,16 @@ $(document).ready(function() {
         vertical: true,
         adaptiveHeight: true,
         centerMode: true,
+        draggable: false,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
                     vertical: false,
                     slidesToShow: 6,
-                    infinite: false
+                    infinite: false,
+                    centerMode: false,
+                    draggable: true,
                 }
             }
         ]

@@ -119,7 +119,7 @@ img {
     // Слайдер товара
     .product-slider {
         overflow: hidden;
-        margin-bottom: 32px;
+        margin-bottom: 23px;
         display: flex;
         flex-direction: column-reverse;
 
@@ -127,7 +127,8 @@ img {
             position: relative;
 
             &-line {
-                margin-bottom: 15px;
+                margin-top: 0;
+                margin-bottom: 13px;
             }
 
             &-custom {
@@ -172,10 +173,10 @@ img {
     
             img {
                 border: 1px solid transparent;
-                margin-left: 36px;
+                // margin-left: 27px;
                 border-radius: 5px;
-                min-width: 19px;
-                max-width: 19px;
+                min-width: 25px;
+                max-width: 25px;
 
                 &:first-child {
                     margin-left: 0;
@@ -188,15 +189,24 @@ img {
             
             .slick-track {
                 display: flex;
+                justify-content: space-between;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
             }
 
             .slider-nav {
                 display: flex;
                 justify-content: space-between;
+                padding-right: 10px;
 
                 &__link {
                     flex: none;
-                    margin-right: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     img {
                         max-width: none;
@@ -204,7 +214,8 @@ img {
                 }
 
                 .js-slider-nav {
-                    padding: 0 15px;
+                    padding-left: 10px;
+                    padding-right: 15px;
                     margin-bottom: 0;
                     width: calc(100% - 35px);
                 }
@@ -216,7 +227,7 @@ img {
             position: relative;
             height: 100%;
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
 
             &:hover {
 

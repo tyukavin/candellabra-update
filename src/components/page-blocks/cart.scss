@@ -1,0 +1,449 @@
+.cart {
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 17px;
+    }
+
+    &__inner {
+        margin-bottom: 46px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "banner"
+            "items"
+            "order";
+    }
+}
+
+// Баннер с хрюшкой
+.cart-buynow {
+    background-color: #F8FFCD;
+    border-radius: 16px;
+    box-shadow: 0px 7px 15px rgba(50, 63, 76, 0.15);
+    color: #000;
+    padding: 11px 20px;
+    margin-bottom: 31px;
+    max-width: 450px;
+    position: relative;
+    grid-area: banner;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 7%;
+    }
+
+    .cart-buynow-time {
+        color: #4A4A4A;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        margin-right: 11px;
+
+        &__item {
+            background-color: #F6F8F9;
+            border-radius: 5px;
+            padding: 13px 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            line-height: 1;
+            min-width: 43px;
+            max-height: 45px;
+        }
+
+        &__separate {
+            margin: 0 3px;
+            font-size: 20px;
+        }
+    }
+
+    .cart-buynow-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+.cart-list {
+    grid-area: items;
+    margin-bottom: 22px;
+}
+
+.cart-data {
+    grid-area: order;
+}
+
+// Блок с итоговой ценой
+.cart-summary {
+    background-color: #F6F8F9;
+    border-radius: 5px;
+    padding: 11px 20px 16px;
+    margin-bottom: 6px;
+
+    &__top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+
+        .count {
+            color: #8D9398;
+            font-size: 10px;
+            font-weight: 500;
+            margin-left: 15px;
+        }
+    }
+
+    &__prices {
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            margin-bottom: 8px;
+
+            span:last-child {
+                margin-left: 15px;
+            }
+
+            &.sale {
+                
+                span:last-child {
+                    color: #FF1B51;
+                }
+            }
+
+            &.total {
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Блок с промокодом
+.promocode {
+    background-color: #F6F8F9;
+    border-radius: 5px;
+    padding: 13px 15px;
+    max-height: 50px;
+    overflow: hidden;
+    margin-bottom: 34px;
+
+    &.show {
+        max-height: 1000px;
+
+        .promocode__top {
+            .icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        padding-left: 4px;
+
+        .icon {
+            height: 24px;
+            width: 24px;
+            transition: transform .2s ease;
+        }
+    }
+
+    &__form {
+        margin-top: 18px;
+        margin-bottom: 8px;
+
+        &.success {
+            .btn {
+                background-color: #54C280;
+            }
+        }
+
+        .input-cart {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+// Оформление заказа
+.order {
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 17px;
+    }
+}
+
+// Блок Идеально к заказу
+.cart-perfect-order {
+    margin-bottom: 46px;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 21px;
+    }
+
+    &__grid {
+        display: flex;
+        overflow-x: auto;
+
+        &--mobile {
+            padding-bottom: 15px;
+        }
+
+        &--desktop {
+            display: none;
+        }
+
+        @include scrollbarItems();
+    }
+}
+
+// Блок Дополнить комплект
+.cart-complete-kit {
+    margin-bottom: 41px;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 21px;
+    }
+
+    &__grid {
+        display: flex;
+        overflow-x: auto;
+
+        &--mobile {
+            padding-bottom: 15px;
+        }
+
+        &--desktop {
+            display: none;
+        }
+
+        @include scrollbarItems();
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cart {
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 38px;
+        }
+
+        &__inner {
+            margin-bottom: 53px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 450px;
+            grid-template-rows: 196px auto;
+            gap: 0px 83px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "items items banner"
+                "items items order";
+        }
+    }
+
+    .cart-buynow {
+        border-radius: 10px;
+        box-shadow: none;
+        padding: 19px 33px;
+        margin-bottom: 11px;
+        max-height: 185px;
+
+        &__title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__img {
+            right: 5%;
+        }
+
+        .cart-buynow-time {
+            margin-right: 21px;
+
+            &__item {
+                padding: 20px 11px;
+                max-height: 65px;
+                font-size: 35px;
+            }
+
+            &__separate {
+                margin: 0 4px;
+            }
+        }
+
+        .cart-buynow-text {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .cart-data {
+        max-width: 450px;
+    }
+
+    .cart-summary {
+        border-radius: 10px;
+        padding: 20px 30px;
+
+        &__top {
+            margin-bottom: 22px;
+
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+    
+            .count {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+
+        &__prices {
+
+            li {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 5px;
+
+                &.total {
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+
+    .promocode {
+        padding: 22px 30px;
+        max-height: 70px;
+        margin-bottom: 19px;
+
+        &__top {
+            font-size: 16px;
+        }
+
+        &__form {
+            margin-top: 28px;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+    
+            .input-cart {
+                margin-bottom: 0;
+                margin-right: 10px;
+                width: 225px;
+            }
+        }
+    }
+
+    .order {
+        border-top: 1px solid #F3F3F3;
+        padding-top: 29px;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26px;
+            margin-bottom: 23px;
+        }
+    }
+
+    .cart-perfect-order {
+        margin-bottom: 75px;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26px;
+            margin-bottom: 39px;
+        }
+
+        &__grid {
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: flex;
+                overflow: visible;
+                flex-wrap: wrap;
+                margin: 0 -2px;
+            }
+        }
+    }
+
+    .cart-complete-kit {
+        margin-bottom: 82px;
+    
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26px;
+            margin-bottom: 42px;
+        }
+    
+        &__grid {
+            
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: flex;
+                overflow: visible;
+                flex-wrap: wrap;
+                margin: 0 -2px;
+            }
+        }
+    }
+}

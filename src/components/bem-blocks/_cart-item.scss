@@ -1,0 +1,217 @@
+.cart-item {
+    display: flex;
+    padding-bottom: 18px;
+    margin-top: 18px;
+    position: relative;
+    border-bottom: 0.5px solid transparent;
+
+    &::after {
+        content: '';
+        background-color: #ECEDF3;
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        right: -20px;
+        height: .5px;
+        width: calc(100% + 40px);
+    }
+
+    &__img {
+        max-width: 50px;
+        margin-right: 14px;
+        flex: none;
+    }
+
+    &__content {
+        padding: 4px 0;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    &__head {
+        margin-bottom: 7px;
+
+        .article {
+            color: #969CA3;
+            font-size: 8px;
+            line-height: 9px;
+            margin-bottom: 2px;
+        }
+
+        .title {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12px;
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+
+    &__prices {
+        display: flex;
+        flex-direction: column;
+
+        .current-price {
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 12px;
+        }
+
+        .old-price {
+            color: #969CA3;
+            font-size: 8px;
+            text-decoration: line-through;
+            line-height: 9px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__counts {
+        display: flex;
+        align-items: center;
+        margin-right: 17px;
+
+        .count {
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0 9px;
+        }
+    }
+}
+
+.btn-count {
+    @include no-btn();
+    height: 21px;
+    width: 21px;
+
+    .icon {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.btn-fav {
+    @include no-btn();
+    height: 21px;
+    width: 21px;
+    padding: 3px;
+
+    .icon {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.btn-delete-desktop {
+    display: none;
+}
+
+.btn-delete-mob {
+    @include no-btn();
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+
+    .icon {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .btn-delete-mob {
+        display: none;
+    }
+
+    .btn-delete-desktop {
+        @include no-btn();
+        color: #323F4C;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+
+    .cart-item {
+        padding-bottom: 0;
+        padding-left: 28px;
+        padding-right: 20px;
+        margin-top: 16px;
+        position: relative;
+        border-bottom: none;
+
+        &::after {
+            display: none;
+        }
+
+        &__img {
+            max-width: 90px;
+            margin-right: 25px;
+        }
+
+        &__content {
+            margin-right: 25px;
+        }
+
+        &__head {
+            margin-bottom: 15px;
+
+            .article {
+                font-size: 12px;
+                line-height: 14px;
+                margin-bottom: 6px;
+            }
+    
+            .title {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__prices {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: baseline;
+            margin-bottom: 8px;
+
+            .current-price {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+            }
+    
+            .old-price {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17px;
+                margin-left: 10px;
+            }
+        }
+
+        &__actions {
+            align-items: flex-start;
+            margin-left: auto;
+            padding-top: 20px;
+        }
+
+        &__counts {
+            display: flex;
+            align-items: center;
+            margin-right: 42px;
+    
+            .count {
+                font-size: 16px;
+                margin: 0 16px;
+            }
+        }
+    }
+}

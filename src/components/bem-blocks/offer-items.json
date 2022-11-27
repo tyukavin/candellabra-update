@@ -1,0 +1,22 @@
+[
+    {
+        "img": "item-1",
+        "badge": false,
+        "sale": true
+    },
+    {
+        "img": "item-2",
+        "badge": true,
+        "sale": false
+    },
+    {
+        "img": "item-3",
+        "badge": true,
+        "sale": true
+    },
+    {
+        "img": "item-4",
+        "badge": false,
+        "sale": false
+    }
+]

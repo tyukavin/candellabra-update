@@ -86,6 +86,10 @@
 .cart-list {
     grid-area: items;
     margin-bottom: 22px;
+
+    &__head {
+        display: none;
+    }
 }
 
 .cart-data {
@@ -211,6 +215,109 @@
         line-height: 21px;
         margin-bottom: 17px;
     }
+
+    &-type {
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            padding: 17px 0;
+            order: 2;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+
+            &.active {
+                order: 1;
+            }
+        }
+    }
+
+    &-section {
+        background-color: #F6F8F9;
+        border-radius: 5px;
+        display: flex;
+        min-height: 50px;
+        max-height: 50px;
+        overflow: hidden;
+        padding-left: 18px;
+        margin-bottom: 6px;
+        flex-wrap: wrap;
+
+        &.show {
+            max-height: 1000px;
+
+            .order-section__action .icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &__icon {
+            padding-top: 14px;
+            margin-right: 12px;
+
+            .icon {
+                height: 23px;
+                width: 23px;
+                vertical-align: middle;
+            }
+        }
+
+        &__content {
+            padding: 10px 0;
+
+            &-head {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            &-subhead {
+                color: #8B919A;
+                font-size: 10px;
+                font-weight: 500;
+            }
+        }
+
+        &__form {
+            padding-right: 18px;
+            width: 100%;
+            margin: 5px 0 15px;
+
+            .input-cart {
+                margin-bottom: 7px;
+            }
+        }
+
+        &__action {
+            padding: 14px 12px 0;
+            margin-left: auto;
+
+            .icon {
+                height: 24px;
+                width: 24px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &-delivery-info {
+        background-color: #EBFDF6;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        padding: 14px 20px;
+        margin-top: 20px;
+    }
+
+    &-action {
+        margin-top: 8px;
+    }
 }
 
 // Блок Идеально к заказу
@@ -273,7 +380,7 @@
         h1 {
             font-size: 24px;
             font-weight: 600;
-            margin-bottom: 38px;
+            margin-bottom: 40px;
         }
 
         &__inner {
@@ -323,6 +430,41 @@
         .cart-buynow-text {
             font-size: 14px;
             line-height: 19px;
+        }
+    }
+
+    .cart-list {
+
+        &__head {
+            display: flex;
+            margin-bottom: 32px;
+
+            &.checked-all {
+
+                .head-all {
+                    color: #323F4C;
+                }
+            }
+
+            &-checkbox {
+                padding-right: 38px;
+            }
+
+            &-title {
+                display: flex;
+
+                .head-all {
+                    color: #D8D8D8;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    margin-right: 34px;
+                }
+
+                button {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -394,6 +536,82 @@
             font-weight: 600;
             line-height: 26px;
             margin-bottom: 23px;
+        }
+
+        &-section {
+            border-radius: 10px;
+            padding: 28px 31px 35px;
+            max-height: none;
+            margin-bottom: 16px;
+
+            &__icon {
+                display: none;
+            }
+
+            &__content {
+                padding: 0;
+
+                &-head {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+
+                &-subhead {
+                    display: none;
+                }
+            }
+
+            &__form {
+                margin-top: 23px;
+                margin-bottom: 0;
+
+                &-row {
+                    display: flex;
+                    gap: 9px;
+                }
+            }
+
+            &__action {
+                display: none;
+            }
+        }
+
+        &-type {
+            background-color: transparent;
+            padding: 0;
+            display: block;
+
+            &__content {
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+            }
+
+            &__item {
+                background-color: #F6F8F9;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 28px 25px;
+                flex: 1;
+            }
+        }
+
+        &-delivery-info {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 23px;
+            padding: 12px 40px;
+            margin-top: 23px;
+        }
+    
+        &-action {
+            margin-top: 10px;
         }
     }
 

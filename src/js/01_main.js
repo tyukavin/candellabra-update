@@ -91,4 +91,36 @@ $(document).ready(function() {
         $(this).parent().find('.map__nav-city-list').toggleClass('show');
     });
 
+    // Cart
+    $('#checkbox-all').click(function(event) {
+
+        $(this).parent().parent().parent().toggleClass('checked-all');
+
+        if (this.checked) {
+
+            $('.cart-list__inner :checkbox').each(function() {
+                this.checked = true;                        
+            });
+        } else {
+
+            $('.cart-list__inner :checkbox').each(function() {
+                this.checked = false;                       
+            });
+        }
+    });
+
+    $('.js-promocode-toggle').click(function() {
+        $(this).parent().toggleClass('show');
+    });
+
+    $('.js-toggle-order-section').click(function() {
+        $(this).parent().toggleClass('show');
+    });
+
+    $('.js-order-change').click(function() {
+        $('.js-order-change').removeClass('active');
+        $(this).toggleClass('active');
+        $('.order-type').removeClass('show');
+    });
+
 });

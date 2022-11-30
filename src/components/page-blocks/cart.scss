@@ -17,7 +17,8 @@
         grid-template-areas:
             "banner"
             "items"
-            "order";
+            "order"
+            "recently";
     }
 }
 
@@ -94,6 +95,34 @@
 
 .cart-data {
     grid-area: order;
+    margin-bottom: 48px;
+}
+
+.cart-recently {
+    grid-area: recently;
+    overflow: hidden;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 21px;
+    }
+
+    &__grid {
+        display: flex;
+        overflow-x: auto;
+
+        &--desktop {
+            display: none;
+        }
+
+        &--mobile {
+            padding-bottom: 15px;
+        }
+
+        @include scrollbarItems();
+    }
 }
 
 // Блок с итоговой ценой
@@ -217,6 +246,14 @@
     }
 
     &-type {
+
+        &__data {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
 
         &__content {
             display: flex;
@@ -386,13 +423,14 @@
         &__inner {
             margin-bottom: 53px;
             display: grid;
-            grid-template-columns: 1fr 1fr 450px;
-            grid-template-rows: 196px auto;
+            grid-template-columns: 1fr 450px;
+            grid-template-rows: 196px auto auto;
             gap: 0px 83px;
             grid-auto-flow: row;
             grid-template-areas:
-                "items items banner"
-                "items items order";
+                "items banner"
+                "items order"
+                "recently order";
         }
     }
 
@@ -470,6 +508,30 @@
 
     .cart-data {
         max-width: 450px;
+        margin-bottom: 0;
+    }
+
+    .cart-recently {
+        border-top: 1px solid #F3F3F3;
+        margin-top: 45px;
+        padding-top: 40px;
+
+        &__title {
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        &__grid {
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+                padding-left: 58px;
+            }
+        }
     }
 
     .cart-summary {
@@ -589,6 +651,7 @@
             }
 
             &__item {
+                color: #D8D8D8;
                 background-color: #F6F8F9;
                 border-radius: 10px;
                 cursor: pointer;
@@ -599,6 +662,11 @@
                 justify-content: center;
                 padding: 28px 25px;
                 flex: 1;
+
+                &.active {
+                    color: initial;
+                    order: 2;
+                }
             }
         }
 

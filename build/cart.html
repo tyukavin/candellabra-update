@@ -57,7 +57,7 @@
     <div class="cart-item__content">
         <div class="cart-item__head">
             <div class="article">Арт. 145-2637</div>
-            <div class="title">ЭКО бомбочка "Медвежья Радость"</div>
+            <a href="#" class="title" title="ЭКО бомбочка "Медвежья Радость"">ЭКО бомбочка "Медвежья Радость"</a>
         </div>
 
         <div class="cart-item__footer">
@@ -111,7 +111,7 @@
     <div class="cart-item__content">
         <div class="cart-item__head">
             <div class="article">Арт. 145-2637</div>
-            <div class="title">ЭКО бомбочка "Медвежья Радость"</div>
+            <a href="#" class="title" title="ЭКО бомбочка "Медвежья Радость"">ЭКО бомбочка "Медвежья Радость"</a>
         </div>
 
         <div class="cart-item__footer">
@@ -165,7 +165,7 @@
     <div class="cart-item__content">
         <div class="cart-item__head">
             <div class="article">Арт. 145-2637</div>
-            <div class="title">ЭКО бомбочка "Медвежья Радость"</div>
+            <a href="#" class="title" title="ЭКО бомбочка "Медвежья Радость"">ЭКО бомбочка "Медвежья Радость"</a>
         </div>
 
         <div class="cart-item__footer">
@@ -219,7 +219,7 @@
     <div class="cart-item__content">
         <div class="cart-item__head">
             <div class="article">Арт. 145-2637</div>
-            <div class="title">ЭКО бомбочка "Медвежья Радость"</div>
+            <a href="#" class="title" title="ЭКО бомбочка "Медвежья Радость"">ЭКО бомбочка "Медвежья Радость"</a>
         </div>
 
         <div class="cart-item__footer">
@@ -273,7 +273,7 @@
     <div class="cart-item__content">
         <div class="cart-item__head">
             <div class="article">Арт. 145-2637</div>
-            <div class="title">ЭКО бомбочка "Медвежья Радость"</div>
+            <a href="#" class="title" title="ЭКО бомбочка "Медвежья Радость"">ЭКО бомбочка "Медвежья Радость"</a>
         </div>
 
         <div class="cart-item__footer">
@@ -400,55 +400,111 @@
                             </div>
                         </div>
 
-                        <div class="order-section">
-                            <div class="order-section__icon">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--User-data"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__content">
-                                <div class="order-section__content-head">Имя, фамилия</div>
-                                <div class="order-section__content-subhead">номер телефона и Email</div>
-                            </div>
-                            <div class="order-section__action js-toggle-order-section">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__form">
-                                <div class="order-section__form-row">
-                                    <input type="text" class="input-cart" name="order-name" placeholder="Имя">
-                                    <input type="text" class="input-cart" name="order-lastname" placeholder="Фамилия">
+                        <div class="order-type__data active">
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-data"/>
+                                    </svg>
                                 </div>
-                                <input type="text" class="input-cart" name="order-phone" placeholder="Номер телефона">
-                                <input type="text" class="input-cart" name="order-email" placeholder="Email">
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Имя, фамилия</div>
+                                    <div class="order-section__content-subhead">номер телефона и Email</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-personal-name" placeholder="Имя">
+                                        <input type="text" class="input-cart" name="order-personal-lastname" placeholder="Фамилия">
+                                    </div>
+                                    <input type="text" class="input-cart" name="order-personal-phone" placeholder="Номер телефона">
+                                    <input type="text" class="input-cart" name="order-personal-email" placeholder="Email">
+                                </div>
+                            </div>
+    
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-map"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Адрес доставки</div>
+                                    <div class="order-section__content-subhead">Улица, дом</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <input type="text" class="input-cart" name="order-personal-city" placeholder="Населенный пункт">
+                                    <input type="text" class="input-cart" name="order-personal-address" placeholder="Адрес">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-personal-float" placeholder="Квартира">
+                                        <input type="text" class="input-cart" name="order-personal-floor" placeholder="Этаж">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="order-section">
-                            <div class="order-section__icon">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--User-map"/>
-                                </svg>
+                        <div class="order-type__data">
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-data"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Название компании</div>
+                                    <div class="order-section__content-subhead">ИНН, номер телефона, Email</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-company-name" placeholder="Название компании">
+                                        <input type="text" class="input-cart" name="order-company-inn" placeholder="ИНН">
+                                    </div>
+                                    <input type="text" class="input-cart" name="order-company-phone" placeholder="Номер телефона">
+                                    <input type="text" class="input-cart" name="order-company-email" placeholder="Email">
+                                </div>
                             </div>
-                            <div class="order-section__content">
-                                <div class="order-section__content-head">Адрес доставки</div>
-                                <div class="order-section__content-subhead">Улица, дом</div>
-                            </div>
-                            <div class="order-section__action js-toggle-order-section">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__form">
-                                <input type="text" class="input-cart" name="order-city" placeholder="Населенный пункт">
-                                <input type="text" class="input-cart" name="order-address" placeholder="Адрес">
-                                <div class="order-section__form-row">
-                                    <input type="text" class="input-cart" name="order-float" placeholder="Квартира">
-                                    <input type="text" class="input-cart" name="order-floor" placeholder="Этаж">
+    
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-map"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Адрес доставки</div>
+                                    <div class="order-section__content-subhead">Улица, дом</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <input type="text" class="input-cart" name="order-company-city" placeholder="Населенный пункт">
+                                    <input type="text" class="input-cart" name="order-company-address" placeholder="Адрес">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-company-house" placeholder="Дом">
+                                        <input type="text" class="input-cart" name="order-company-office" placeholder="Офис">
+                                        <input type="text" class="input-cart" name="order-company-floor" placeholder="Этаж">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
 
                         <div class="order-delivery-info">
                             Cтоимость доставки рассчитаем на&nbsp;следующем шаге
@@ -457,6 +513,192 @@
                         <div class="order-action">
                             <a href="checkout.html" class="btn btn--primary">Далее: финальные данные</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="cart-recently">
+                    <div class="cart-recently__title">Недавно удаленные</div>
+                    <div class="cart-recently__grid cart-recently__grid--desktop">
+                        <div class="recently-item">
+    <div class="recently-item__img">
+        <img src="img/cart/recently/item-1.jpg" alt="item-1">
+    </div>
+
+    <div class="recently-item__content">
+        <div class="recently-item__head">
+            <div class="recently-item__head-text">
+                <div class="article">Арт. 145-2637</div>
+                <a href="#" class="name" title="Диван Дублин модульный Тринити (Аметист)">
+                    Диван Дублин модульный Тринити (Аметист) - Тринит[...]
+                </a>
+            </div>
+            <button class="btn-fav" type="button">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#sprite--Favorite"/>
+                </svg>
+            </button>
+        </div>
+        <div class="recently-item__footer">
+            <div class="recently-item__footer-prices">
+                <span class="current-price">24 131 ₽</span>
+                <span class="old-price">34 131 ₽</span>
+            </div>
+            <div class="recently-item__footer-action">
+                <button class="btn-cart">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#sprite--Сart"/>
+                    </svg>
+                    <span>В корзину</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><div class="recently-item">
+    <div class="recently-item__img">
+        <img src="img/cart/recently/item-2.jpg" alt="item-2">
+    </div>
+
+    <div class="recently-item__content">
+        <div class="recently-item__head">
+            <div class="recently-item__head-text">
+                <div class="article">Арт. 145-2637</div>
+                <a href="#" class="name" title="Диван Дублин модульный Тринити (Аметист)">
+                    Диван Дублин модульный Тринити (Аметист) - Тринит[...]
+                </a>
+            </div>
+            <button class="btn-fav" type="button">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#sprite--Favorite"/>
+                </svg>
+            </button>
+        </div>
+        <div class="recently-item__footer">
+            <div class="recently-item__footer-prices">
+                <span class="current-price">24 131 ₽</span>
+                <span class="old-price">34 131 ₽</span>
+            </div>
+            <div class="recently-item__footer-action">
+                <button class="btn-cart">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#sprite--Сart"/>
+                    </svg>
+                    <span>В корзину</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="cart-recently__grid cart-recently__grid--mobile">
+                        <a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/1-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a><a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/2-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a><a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/1-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a><a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/2-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a><a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/1-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a><a href="#" class="viewed-item-mobile" title="Кресло Secret De Maison Pintada">
+    <div class="viewed-item-mobile__img">
+        <img src="img/mobile/2-mob.jpg" alt="Кресло Secret De Maison Pintada">
+    </div>
+    <div class="viewed-item-mobile__name">Кресло Secret De Maison Pintada</div>
+    <div class="viewed-item-mobile__count">Наличие: 2 шт.</div>
+    <div class="viewed-item-mobile__price">
+        <span class="viewed-item-mobile__price-current">15 000 ₽</span>
+        <span class="viewed-item-mobile__price-old">18 000 ₽</span>
+    </div>
+    <div class="viewed-item-mobile__action">
+        <button class="btn-cart">
+            <svg class="icon">
+                <use xlink:href="img/sprite.svg#sprite--Сart"/>
+            </svg>
+            <span>В корзину</span>
+        </button>
+    </div>
+</a>
                     </div>
                 </div>
             </div>

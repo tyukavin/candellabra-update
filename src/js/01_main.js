@@ -120,6 +120,9 @@ $(document).ready(function() {
     $('.js-order-change').click(function() {
         $('.js-order-change').removeClass('active');
         $(this).toggleClass('active');
+        $('.order-section').removeClass('show')
+        $('.order-type__data').removeClass('active')
+        $('.order-type__data').eq($(this).index()).addClass('active')
         $('.order-type').removeClass('show');
     });
 

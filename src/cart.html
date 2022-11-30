@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="cart-list__inner">
-                        @@loop("components/bem-blocks/_cart-item.html", "components/bem-blocks/cart-item.json")
+                        @@loop("components/bem-blocks/cart-item/_cart-item.html", "components/bem-blocks/cart-item/cart-item.json")
                     </div>
                 </div>
 
@@ -116,55 +116,111 @@
                             </div>
                         </div>
 
-                        <div class="order-section">
-                            <div class="order-section__icon">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--User-data"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__content">
-                                <div class="order-section__content-head">Имя, фамилия</div>
-                                <div class="order-section__content-subhead">номер телефона и Email</div>
-                            </div>
-                            <div class="order-section__action js-toggle-order-section">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__form">
-                                <div class="order-section__form-row">
-                                    <input type="text" class="input-cart" name="order-name" placeholder="Имя">
-                                    <input type="text" class="input-cart" name="order-lastname" placeholder="Фамилия">
+                        <div class="order-type__data active">
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-data"/>
+                                    </svg>
                                 </div>
-                                <input type="text" class="input-cart" name="order-phone" placeholder="Номер телефона">
-                                <input type="text" class="input-cart" name="order-email" placeholder="Email">
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Имя, фамилия</div>
+                                    <div class="order-section__content-subhead">номер телефона и Email</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-personal-name" placeholder="Имя">
+                                        <input type="text" class="input-cart" name="order-personal-lastname" placeholder="Фамилия">
+                                    </div>
+                                    <input type="text" class="input-cart" name="order-personal-phone" placeholder="Номер телефона">
+                                    <input type="text" class="input-cart" name="order-personal-email" placeholder="Email">
+                                </div>
+                            </div>
+    
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-map"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Адрес доставки</div>
+                                    <div class="order-section__content-subhead">Улица, дом</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <input type="text" class="input-cart" name="order-personal-city" placeholder="Населенный пункт">
+                                    <input type="text" class="input-cart" name="order-personal-address" placeholder="Адрес">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-personal-float" placeholder="Квартира">
+                                        <input type="text" class="input-cart" name="order-personal-floor" placeholder="Этаж">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="order-section">
-                            <div class="order-section__icon">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--User-map"/>
-                                </svg>
+                        <div class="order-type__data">
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-data"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Название компании</div>
+                                    <div class="order-section__content-subhead">ИНН, номер телефона, Email</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-company-name" placeholder="Название компании">
+                                        <input type="text" class="input-cart" name="order-company-inn" placeholder="ИНН">
+                                    </div>
+                                    <input type="text" class="input-cart" name="order-company-phone" placeholder="Номер телефона">
+                                    <input type="text" class="input-cart" name="order-company-email" placeholder="Email">
+                                </div>
                             </div>
-                            <div class="order-section__content">
-                                <div class="order-section__content-head">Адрес доставки</div>
-                                <div class="order-section__content-subhead">Улица, дом</div>
-                            </div>
-                            <div class="order-section__action js-toggle-order-section">
-                                <svg class="icon">
-                                    <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
-                                </svg>
-                            </div>
-                            <div class="order-section__form">
-                                <input type="text" class="input-cart" name="order-city" placeholder="Населенный пункт">
-                                <input type="text" class="input-cart" name="order-address" placeholder="Адрес">
-                                <div class="order-section__form-row">
-                                    <input type="text" class="input-cart" name="order-float" placeholder="Квартира">
-                                    <input type="text" class="input-cart" name="order-floor" placeholder="Этаж">
+    
+                            <div class="order-section">
+                                <div class="order-section__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--User-map"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__content">
+                                    <div class="order-section__content-head">Адрес доставки</div>
+                                    <div class="order-section__content-subhead">Улица, дом</div>
+                                </div>
+                                <div class="order-section__action js-toggle-order-section">
+                                    <svg class="icon">
+                                        <use xlink:href="img/sprite.svg#sprite--Cart-arrow"/>
+                                    </svg>
+                                </div>
+                                <div class="order-section__form">
+                                    <input type="text" class="input-cart" name="order-company-city" placeholder="Населенный пункт">
+                                    <input type="text" class="input-cart" name="order-company-address" placeholder="Адрес">
+                                    <div class="order-section__form-row">
+                                        <input type="text" class="input-cart" name="order-company-house" placeholder="Дом">
+                                        <input type="text" class="input-cart" name="order-company-office" placeholder="Офис">
+                                        <input type="text" class="input-cart" name="order-company-floor" placeholder="Этаж">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
 
                         <div class="order-delivery-info">
                             Cтоимость доставки рассчитаем на&nbsp;следующем шаге
@@ -175,12 +231,22 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="cart-recently">
+                    <div class="cart-recently__title">Недавно удаленные</div>
+                    <div class="cart-recently__grid cart-recently__grid--desktop">
+                        @@loop("components/bem-blocks/recently-item/_recently-item.html", "components/bem-blocks/recently-item/recently-items.json")
+                    </div>
+                    <div class="cart-recently__grid cart-recently__grid--mobile">
+                        @@loop("components/bem-blocks/_viewed-item-mobile.html", "components/bem-blocks/items-viewed-mobile.json")
+                    </div>
+                </div>
             </div>
 
             <div class="cart-perfect-order">
                 <h3 class="cart-perfect-order__title">Идеально к заказу</h3>
                 <div class="cart-perfect-order__grid cart-perfect-order__grid--desktop">
-                    @@loop("components/bem-blocks/_offer-item-cart-desktop.html", "components/bem-blocks/offer-items.json")
+                    @@loop("components/bem-blocks/offer-item/_offer-item-cart-desktop.html", "components/bem-blocks/offer-item/offer-items.json")
                 </div>
                 <div class="cart-perfect-order__grid cart-perfect-order__grid--mobile">
                     @@loop("components/bem-blocks/_viewed-item-mobile.html", "components/bem-blocks/items-viewed-mobile.json")
@@ -190,7 +256,7 @@
             <div class="cart-complete-kit">
                 <h3 class="cart-complete-kit__title">Дополнить комплект</h3>
                 <div class="cart-complete-kit__grid cart-complete-kit__grid--desktop">
-                    @@loop("components/bem-blocks/_offer-item-cart-desktop.html", "components/bem-blocks/offer-items.json")
+                    @@loop("components/bem-blocks/offer-item/_offer-item-cart-desktop.html", "components/bem-blocks/offer-item/offer-items.json")
                 </div>
                 <div class="cart-complete-kit__grid cart-complete-kit__grid--mobile">
                     @@loop("components/bem-blocks/_viewed-item-mobile.html", "components/bem-blocks/items-viewed-mobile.json")

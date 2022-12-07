@@ -181,11 +181,14 @@
 .btn {
     @include no-btn();
     border-radius: 10px;
-    display: inline-block;
-    padding: 17px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
     width: 100%;
     font-size: 14px;
     font-weight: 600;
+    min-height: 50px;
     text-align: center;
     transition: background-color .2s ease;
 
@@ -208,12 +211,22 @@
         }
     }
 
+    &--light {
+        color: #040404;
+        background-color: #F6F8F9;
+    }
+
     &--xs {
         border-radius: 6px;
         height: 40px;
         font-size: 12px;
         font-weight: 500;
         padding: 10px 20px;
+    }
+
+    img {
+        display: inline-block;
+        margin-left: 12px;
     }
 }
 
